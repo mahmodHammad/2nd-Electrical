@@ -1,0 +1,42 @@
+
+body{
+    /* color: red; */
+    margin: 0;
+}
+
+nav{
+background-color: brown;
+padding: 10px 0px;
+}
+nav ul{
+    margin: 0;
+    text-align: center;
+}
+nav ul li{
+display: inline-block;
+}
+nav ul li a{
+    color: cornsilk;
+    text-decoration: none;
+    margin: 0 50px;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.header{
+    background-color: cornsilk;
+    padding: 200px 30px;
+    text-align: center;
+}
+.header h1{
+    text-transform: uppercase;
+}
+.header p {
+    font-size: 24px;
+    font-weight: bold;
+    color: brown;
+    text-transform: capitalize;
+}
+table{
+    text-transform: capitalize;
+}
