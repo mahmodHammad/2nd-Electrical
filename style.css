@@ -1,6 +1,5 @@
 
 body{
-    /* color: red; */
     margin: 0;
 }
 
@@ -14,15 +13,20 @@ nav ul{
 }
 nav ul li{
 display: inline-block;
+margin: 0 10%;
 }
 nav ul li a{
     color: cornsilk;
     text-decoration: none;
-    margin: 0 50px;
     font-weight: bold;
     font-size: 20px;
     text-transform: capitalize;
 }
+
+
+/*********************************************/
+
+
 .header{
     background-color: cornsilk;
     padding: 200px 30px;
@@ -39,4 +43,23 @@ nav ul li a{
 }
 table{
     text-transform: capitalize;
+}
+
+
+
+/* frame */
+.subject-video{
+text-align: center;
+background-color: #eee;
+padding: 30px;
+margin-bottom: 5%;
+}
+.subject-video h1{
+    text-decoration: wavy;
+    margin-bottom: 50px;
+}
+
+iframe{
+    width: 85%;
+    height: 46vw;
 }
