@@ -6,10 +6,13 @@ const data = [
    , {lable:"thermo 2",label:"thermodynamics after Mid Term", value: { rec: "https://drive.google.com/file/d/14gw6N-nenYMfIa9BPIiRerwLoCuaF8OO/preview", pdf: "https://drive.google.com/file/d/1IeEYvpW-ruuY9wQeP7H49AmKkVK4lR1b/preview" } }
 ]
 const content = document.querySelector('.content')
-const btns = document.querySelector('.btns')
+const footer=document.querySelector(".footer")
 
 
 function renderbtn(){
+    let btns=document.createElement("div")
+    btns.className='btns'
+    content.appendChild(btns)
 
     for (const e of data) {
         console.log(e)    
@@ -17,7 +20,6 @@ function renderbtn(){
         btns.appendChild(btn)
     }
 }
-// setTimeout(renderbtn,500 )
 renderbtn()
 
 function createbtn(lable, classe ,label,value) {
@@ -62,6 +64,7 @@ function render(child) {
     if(c===0){
         content.appendChild(child)
         old=child
+        footer.style.display="block"
     }
     else{
         if(child!==old){
