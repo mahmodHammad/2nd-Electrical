@@ -91,3 +91,16 @@ margin-bottom: 5%;
 .content{
     margin-top: 44px;
 }
+
+
+.btn{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.btn:hover{
+    cursor: pointer;
+    border: brown 1px solid;
+}
