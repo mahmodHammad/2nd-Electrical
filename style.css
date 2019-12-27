@@ -69,9 +69,10 @@ text-align: center;
 background-color: #eee;
 /* padding: 30px; */
 margin-bottom: 5%;
+padding: 40px 0px;
 }
 .subject-video h1{
-    margin-bottom: 50px;
+    margin-bottom: 4%;
 }
 
 .subject-video iframe{
@@ -114,10 +115,15 @@ margin-bottom: 5%;
 }
 @media(max-width:610px){
 .btn{
-    font-size: 12px;
-    padding: 6px 8px;
+    font-size: 11px;
+    padding: 4px 7px;
     margin: 12px 1%;
 }
+.subject-video h1{
+    margin-bottom: 10%;
+    font-size: 30px;
+}
+
 }
 .btn:hover{
     cursor: pointer;
