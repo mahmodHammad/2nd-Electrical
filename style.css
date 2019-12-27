@@ -92,13 +92,26 @@ margin-bottom: 5%;
     margin-top: 44px;
 }
 
+.btns{
+    text-align: center;
+    /* padding: 10px; */
+    background-color: brown;
 
+}
 .btn{
+    margin: 15px 2%;
     border: none;
-    padding: 10px 20px;
+    padding: 9px 10px;
     border-radius: 6px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
+}
+@media(max-width:610px){
+.btn{
+    font-size: 10px;
+    padding: 6px 8px;
+    margin: 12px 1%;
+}
 }
 .btn:hover{
     cursor: pointer;
