@@ -7,7 +7,7 @@ body {
   text-align: center;
   padding: 20px;
 }
-
+/* nav*******************/
 nav {
   background-color: brown;
   padding: 4px 0px;
@@ -19,24 +19,24 @@ nav {
   top: 0px;
 }
 nav ul {
-  margin: 0 ;
+  margin: 0;
   padding-left: 0;
   text-align: center;
 }
 nav ul li {
   display: inline-block;
   /* margin: 0 4%; */
-  background-color: rgba(222, 200, 200,.05);
+  background-color: rgba(222, 200, 200, 0.05);
   padding: 10px 6.4%;
-border-radius: 5px;
+  border-radius: 5px;
 }
 nav ul li a {
-  color: cornsilk;
+  color: #fff8dc;
   text-decoration: none;
   font-weight: bold;
   font-size: 18px;
   text-transform: capitalize;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
 }
 nav ul li a:hover {
@@ -44,16 +44,22 @@ nav ul li a:hover {
   color: #fff;
 }
 nav ul li:hover {
-    text-decoration: none;
-    background-color: rgba(222, 200, 200,.55);
-
-  }
+  text-decoration: none;
+  background-color: rgba(222, 200, 200, 0.55);
+}
 
 /*********************************************/
-
+/* header*************************************/
 .header {
-  background-color: cornsilk;
-  padding: 44vh 0px 39vh 0px ;
+  margin-top: 40px;
+  background: linear-gradient(
+    0deg,
+    rgb(226, 124, 124),
+    #fff8dc,
+    #fff8dc,
+    rgb(226, 124, 124)
+  );
+  padding: 40vh 0px 38vh 0px;
   width: 100%;
   text-align: center;
 }
@@ -63,15 +69,14 @@ nav ul li:hover {
   padding: 0 10px;
 }
 .header p {
-    padding: 0px 8px;
+  padding: 0px 8px;
   font-size: 1.5rem;
   font-weight: bold;
   color: brown;
   text-transform: capitalize;
 }
-.header span{
-    font-size: 1.2rem;
-
+.header span {
+  font-size: 1.2rem;
 }
 table {
   text-transform: capitalize;
@@ -115,9 +120,28 @@ table {
 .btns {
   text-align: center;
   /* padding: 10px; */
-  background-color: brown;
+  background-color: #065186;
+  margin-bottom: -10px;
+  z-index: 10 !important;
+}
+.scroll {
+  display: block;
+  width: 20vw;
+  text-align: center;
+  background: #065186;
+  padding: 30px 20px;
+  color: #fff;
+  margin: -6vh 0 40px 35vw;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  z-index: -2 !important;
+}
+.scroll:hover {
+  background: #1368a5;
 }
 .btn {
+  text-transform: capitalize;
+
   color: #444;
   margin: 15px 2%;
   border: none;
@@ -127,7 +151,16 @@ table {
   font-weight: bold;
   background-color: #ddd !important;
 }
+
 @media (max-width: 610px) {
+  .scroll {
+    width: 20vw;
+    padding: 30px 20px 15px;
+    margin: -7vh 0 20px 36vw;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    font-size: 13px;
+  }
   .btn {
     font-size: 11px;
     padding: 4px 7px;
@@ -138,13 +171,27 @@ table {
     font-size: 30px;
   }
   .subject-video iframe {
-    width:100%;
+    width: 100%;
     height: 58vw;
   }
   .header {
-    padding: 40vh 0px 35vh 0px ;
-     }
+    margin-top: 48px;
+    padding: 32vh 0px 33vh 0px;
+  }
 }
+
+@media (max-width: 730px) {
+  .header {
+    margin-top: 48px;
+    padding: 42vh 0px 41vh 0px !important;
+  }
+  .btn {
+    font-size: 11px;
+    padding: 1.6vw 2vw;
+    margin: 12px 1%;
+  }
+}
+
 .btn:hover {
   cursor: pointer;
   background-color: #fff !important;
