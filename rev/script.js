@@ -15,7 +15,6 @@ function renderbtn(){
     content.appendChild(btns)
 
     for (const e of data) {
-        console.log(e)    
         let btn=createbtn(e.lable,"btn",e.label ,e.value)
         btns.appendChild(btn)
     }
@@ -28,7 +27,6 @@ function createbtn(lable, classe ,label,value) {
     btn.className = classe
     btn.innerText = lable
     btn.onclick=()=>create(label,value.rec,value.pdf)
-    console.log(btn)
     return btn
 }
 
@@ -38,7 +36,7 @@ function create(label, recsrc, pdfsrc) {
     let scroll = document.createElement("a")
     scroll.className = "scroll"
     scroll.href="#doc"
-    scroll.innerHTML="scroll to pdf "
+    scroll.innerHTML="scroll "
 
     let rev = document.createElement("div")
     rev.className = "rev"

@@ -124,7 +124,7 @@ table {
   margin-bottom: -10px;
   z-index: 10 !important;
 }
-.scroll {
+/* .scroll {
   display: block;
   width: 20vw;
   text-align: center;
@@ -136,9 +136,7 @@ table {
   border-bottom-right-radius: 50%;
   z-index: -2 !important;
 }
-.scroll:hover {
-  background: #1368a5;
-}
+ */
 .btn {
   text-transform: capitalize;
 
@@ -153,14 +151,13 @@ table {
 }
 
 @media (max-width: 610px) {
-  .scroll {
-    width: 20vw;
+  /* .scroll {
     padding: 30px 20px 15px;
-    margin: -7vh 0 20px 36vw;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    font-size: 13px;
-  }
+    margin: -7vh 0 20px 26vw;
+    border-radius: 50%;
+;
+    padding: 5vw;
+  } */
   .btn {
     font-size: 11px;
     padding: 4px 7px;
@@ -176,20 +173,23 @@ table {
   }
   .header {
     margin-top: 48px;
-    padding: 32vh 0px 33vh 0px;
+    padding: 32vh 0px 32vh 0px;
   }
 }
 
-@media (max-width: 730px) {
-  .header {
-    margin-top: 48px;
-    padding: 42vh 0px 41vh 0px !important;
-  }
-  .btn {
-    font-size: 11px;
-    padding: 1.6vw 2vw;
-    margin: 12px 1%;
-  }
+@media (max-width: 730px )  {
+    @media(min-width:610px){
+        .header {
+          margin-top: 48px;
+          padding: 41vh 0px 40vh 0px !important;
+        }
+        .btn {
+          font-size: 11px;
+          padding: 1.6vw 2vw;
+          margin: 12px 1%;
+        }
+
+    }
 }
 
 .btn:hover {
