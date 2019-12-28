@@ -59,7 +59,7 @@ nav ul li:hover {
     #fff8dc,
     rgb(226, 124, 124)
   );
-  padding: 40vh 0px 38vh 0px;
+  padding: 40vh 0px 40vh 0px;
   width: 100%;
   text-align: center;
 }
@@ -75,7 +75,7 @@ nav ul li:hover {
   color: brown;
   text-transform: capitalize;
 }
-.header span {
+.header p span {
   font-size: 1.2rem;
 }
 table {
@@ -159,6 +159,9 @@ table {
     padding: 5vw;
   } */
 
+  .header h1 span{
+    display: block;
+}
   .btn {
     font-size: 11px;
     padding: 4px 7px;
@@ -174,7 +177,7 @@ table {
   }
   .header {
     /* margin-top: 48px; */
-    padding: 31vh 0px 30vh 0px;
+    padding: 30vh 0px 33vh 0px;
   }
 }
 
@@ -219,11 +222,17 @@ footer p {
   display: none;
 }
 
-.table {
-    border: none;
 
+
+
+
+/* ********************************************* */
+/* ********************************************* */
+/* ********************************************* */
+/* ********************************************* */
+
+.table {
   width: 100%;
-  margin: 50px 0;
   margin-bottom: 1rem;
   color: #212529;
 }
