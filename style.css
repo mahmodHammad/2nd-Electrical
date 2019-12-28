@@ -10,7 +10,7 @@ body {
 
 nav {
   background-color: brown;
-  padding: 2px 0px;
+  padding: 4px 0px;
   margin: 0px;
   width: 100%;
 }
@@ -53,13 +53,13 @@ nav ul li:hover {
 
 .header {
   background-color: cornsilk;
-  padding: 38vh 0px 36vh 0px ;
+  padding: 38vh 0px 34vh 0px ;
   width: 100%;
   text-align: center;
 }
 .header h1 {
   text-transform: uppercase;
-  font-size: 2.9rem;
+  font-size: 2.8rem;
   padding: 0 10px;
 }
 .header p {
