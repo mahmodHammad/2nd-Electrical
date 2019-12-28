@@ -219,6 +219,8 @@ footer p {
 }
 
 .table {
+    border: none;
+
   width: 100%;
   margin-bottom: 1rem;
   color: #212529;
@@ -226,16 +228,16 @@ footer p {
 .table td,
 .table th {
   padding: 0.75rem;
+  border: none;
+
   vertical-align: top;
-  border-top: 1px solid #dee2e6;
 }
 .table thead th {
-  vertical-align: bottom;
-  border-bottom: 2px solid #dee2e6;
+    border: none;
+
+    vertical-align: bottom;
 }
-.table tbody + tbody {
-  border-top: 2px solid #dee2e6;
-}
+
 .table .thead-dark th {
   color: #fff;
   background-color: #343a40;
