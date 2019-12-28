@@ -159,7 +159,7 @@ table {
     padding: 5vw;
   } */
 
-  .header h1 span{
+.header h1 span{
     display: block;
 }
   .btn {
@@ -177,7 +177,7 @@ table {
   }
   .header {
     /* margin-top: 48px; */
-    padding: 30vh 0px 33vh 0px;
+    padding: 29vh 0px 30vh 0px;
   }
 }
 
