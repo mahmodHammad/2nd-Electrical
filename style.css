@@ -1,147 +1,149 @@
-
-body{
-    margin: 0;
-    width: 100%;
-    text-transform: capitalize;
+body {
+  margin: 0;
+  width: 100%;
+  text-transform: capitalize;
 }
-.center{
-    text-align: center;
-    padding: 20px;
+.center {
+  text-align: center;
+  padding: 20px;
 }
-nav{
-background-color: brown;
-padding: 10px 0px;
-position: fixed;
-top: 0px;
-margin: 0px;
-width: 100%;
+nav {
+  background-color: brown;
+  padding: 10px 0px;
+  margin: 0px;
+  width: 100%;
 }
-nav ul{
-    margin: 0;
-    text-align: center;
+.fixed{
+    position: fixed;
+    top: 0px;  
 }
-nav ul li{
-display: inline-block;
-margin: 0 4%;
+nav ul {
+  margin: 0;
+  text-align: center;
 }
-nav ul li a{
-    color: cornsilk;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 20px;
-    text-transform: capitalize;
+nav ul li {
+  display: inline-block;
+  margin: 0 4%;
 }
-nav ul li a:hover{
-    text-decoration: none;
+nav ul li a {
+  color: cornsilk;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: capitalize;
 }
-
+nav ul li a:hover {
+  text-decoration: none;
+}
 
 /*********************************************/
-.content{
-    margin-top: 44px;
+.content {
+  margin-top: 44px;
 }
 
-.header{
-    background-color: cornsilk;
-    padding: 200px 30px;
-    width: 100%;
-    text-align: center;
+.header {
+  background-color: cornsilk;
+  padding: 200px 30px;
+  width: 100%;
+  text-align: center;
 }
-.header h1{
-    text-transform: uppercase;
+.header h1 {
+  text-transform: uppercase;
 }
 .header p {
-    font-size: 19px;
-    font-weight: bold;
-    color: brown;
-    text-transform: capitalize;
+  font-size: 19px;
+  font-weight: bold;
+  color: brown;
+  text-transform: capitalize;
 }
-table{
-    text-transform: capitalize;
+table {
+  text-transform: capitalize;
 }
-
-
 
 /* frame */
-.subject-video{
-    width: 100%;
-text-align: center;
-background-color: #eee;
-/* padding: 30px; */
-margin-bottom: 5%;
-padding: 40px 0px;
+.subject-video {
+  width: 100%;
+  text-align: center;
+  background-color: #eee;
+  /* padding: 30px; */
+  margin-bottom: 5%;
+  padding: 40px 0px;
 }
-.subject-video h1{
-    margin-bottom: 4%;
+.subject-video h1 {
+  margin-bottom: 4%;
 }
 
-.subject-video iframe{
-    width: 85%;
-    height: 46vw;
+.subject-video iframe {
+  width: 85%;
+  height: 46vw;
 }
 .rev {
-    width: 99%;
-    margin: 20px 0px;
-    text-align: center;
+  width: 99%;
+  margin: 20px 0px;
+  text-align: center;
 }
-.rev .record{
-    width: 100%;
-    height: 60px;
+.rev .record {
+  width: 100%;
+  height: 60px;
 }
-.rev .pdf{
-    width: 100%;
-    height: 90vw;
-}
-
-.content{
-    margin-top: 44px;
+.rev .pdf {
+  width: 100%;
+  height: 99vh;
 }
 
-.btns{
-    text-align: center;
-    /* padding: 10px; */
-    background-color: brown;
+.content {
+  margin-top: 44px;
+}
 
+.btns {
+  text-align: center;
+  /* padding: 10px; */
+  background-color: brown;
 }
-.btn{
-    color: #444;
-    margin: 15px 2%;
-    border: none;
-    padding: 9px 10px;
-    border-radius: 6px;
-    font-size: 18px;
-    font-weight: bold;
-    background-color: #ddd !important;
+.btn {
+  color: #444;
+  margin: 15px 2%;
+  border: none;
+  padding: 9px 10px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #ddd !important;
 }
-@media(max-width:610px){
-.btn{
+@media (max-width: 610px) {
+  .btn {
     font-size: 11px;
     padding: 4px 7px;
     margin: 12px 1%;
-}
-.subject-video h1{
+  }
+  .subject-video h1 {
     margin-bottom: 10%;
     font-size: 30px;
+  }
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: #fff !important;
+  color: #000;
 }
 
-}
-.btn:hover{
-    cursor: pointer;
-    background-color: #fff !important;
-    color: #000;
+
+.sketchfab-embed-wrapper iframe{
+  width: 100%;
+  height: 94vh;
+  margin-top: 0;
 }
 
-
-.sketchfab-embed-wrapper{width:100%;height:90vw;} 
-
-footer{
-    margin-top: 50px;
-    background-color:#000;
-    padding: 20px;
-    color:cornsilk  ;
-    text-align: center;
+footer {
+  margin-top: 50px;
+  background-color: #000;
+  padding: 20px;
+  color: cornsilk;
+  text-align: center;
 }
-footer p{
-    margin: 0;
+footer p {
+  margin: 0;
 }
-.footer{display: none;}
+.footer {
+  display: none;
+}

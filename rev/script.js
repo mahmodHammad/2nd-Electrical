@@ -34,6 +34,12 @@ function createbtn(lable, classe ,label,value) {
 
 function create(label, recsrc, pdfsrc) {
 
+    
+    let scroll = document.createElement("a")
+    scroll.className = "scroll"
+    scroll.href="#doc"
+    scroll.innerHTML="scroll to pdf "
+
     let rev = document.createElement("div")
     rev.className = "rev"
 
@@ -44,10 +50,15 @@ function create(label, recsrc, pdfsrc) {
     rec.src = recsrc
     rec.className = "record"
 
+
     let pdf = document.createElement("iframe")
     pdf.src = pdfsrc
+    pdf.attributes.mozallowfullscreen="true";
+    pdf.webkitallowfullscreen="true"
     pdf.className = "pdf"
+    pdf.id='doc'
 
+    rev.appendChild(scroll)
     rev.appendChild(hd3)
     rev.appendChild(rec)
     rev.appendChild(pdf)
