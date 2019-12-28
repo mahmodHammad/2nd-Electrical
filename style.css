@@ -211,7 +211,8 @@ table {
 footer {
   /* margin-top: 50px; */
   background-color: #000;
-  padding: 20px;
+  padding: 20px 0;
+  
   color: cornsilk;
   text-align: center;
 }

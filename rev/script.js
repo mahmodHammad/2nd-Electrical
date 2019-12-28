@@ -77,7 +77,7 @@ function create(label, recsrc, pdfsrc) {
   let scroll = document.createElement("a");
   scroll.className = "scroll";
   scroll.href = "#doc";
-  scroll.innerHTML = "scroll ";
+  scroll.innerHTML = "scroll to pdf";
 
   let rev = document.createElement("div");
   rev.className = "rev";
