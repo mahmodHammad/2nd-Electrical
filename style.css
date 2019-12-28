@@ -7,9 +7,10 @@ body {
   text-align: center;
   padding: 20px;
 }
+
 nav {
   background-color: brown;
-  padding: 10px 0px;
+  /* padding: 10px 0px; */
   margin: 0px;
   width: 100%;
 }
@@ -18,12 +19,16 @@ nav {
   top: 0px;
 }
 nav ul {
-  margin: 0;
+  margin: 0 ;
+  padding-left: 0;
   text-align: center;
 }
 nav ul li {
   display: inline-block;
-  margin: 0 4%;
+  /* margin: 0 4%; */
+  background-color: rgba(222, 200, 200,.05);
+  padding: 10px 7.6%;
+border-radius: 5px;
 }
 nav ul li a {
   color: cornsilk;
@@ -34,7 +39,13 @@ nav ul li a {
 }
 nav ul li a:hover {
   text-decoration: none;
+  color: #fff;
 }
+nav ul li:hover {
+    text-decoration: none;
+    background-color: rgba(222, 200, 200,.35);
+
+  }
 
 /*********************************************/
 .content {
@@ -43,18 +54,25 @@ nav ul li a:hover {
 
 .header {
   background-color: cornsilk;
-  padding: 200px 30px;
+  padding: 38vh 0px 36vh 0px ;
   width: 100%;
   text-align: center;
 }
 .header h1 {
   text-transform: uppercase;
+  font-size: 2.7rem;
+  padding: 0 10px;
 }
 .header p {
-  font-size: 19px;
+    padding: 0px 8px;
+  font-size: 1.5rem;
   font-weight: bold;
   color: brown;
   text-transform: capitalize;
+}
+.header span{
+    font-size: 1.2rem;
+
 }
 table {
   text-transform: capitalize;
@@ -199,7 +217,7 @@ a:not([href]):not([tabindex]):focus {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   font-family: sans-serif;
   font-weight: 500;
   color: #333;
@@ -238,168 +256,3 @@ p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
-
-.table {
-    width: 100%;
-    max-width: 100%;
-    margin-bottom: 1rem;
-  }
-  
-  .table th,
-  .table td {
-    padding: 0.75rem;
-    vertical-align: top;
-    border-top: 1px solid #eceeef;
-  }
-  
-  .table thead th {
-    vertical-align: bottom;
-    border-bottom: 2px solid #eceeef;
-  }
-  
-  .table tbody + tbody {
-    border-top: 2px solid #eceeef;
-  }
-  
-  .table .table {
-    background-color: #fff;
-  }
-  
-  .table-sm th,
-  .table-sm td {
-    padding: 0.3rem;
-  }
-  
-  .table-bordered {
-    border: 1px solid #eceeef;
-  }
-  
-  .table-bordered th,
-  .table-bordered td {
-    border: 1px solid #eceeef;
-  }
-  
-  .table-bordered thead th,
-  .table-bordered thead td {
-    border-bottom-width: 2px;
-  }
-  
-  .table-striped tbody tr:nth-of-type(odd) {
-    background-color: rgba(0, 0, 0, 0.05);
-  }
-  
-  .table-hover tbody tr:hover {
-    background-color: rgba(0, 0, 0, 0.075);
-  }
-  
-  .table-active,
-  .table-active > th,
-  .table-active > td {
-    background-color: rgba(0, 0, 0, 0.075);
-  }
-  
-  .table-hover .table-active:hover {
-    background-color: rgba(0, 0, 0, 0.075);
-  }
-  
-  .table-hover .table-active:hover > td,
-  .table-hover .table-active:hover > th {
-    background-color: rgba(0, 0, 0, 0.075);
-  }
-  
-  .table-success,
-  .table-success > th,
-  .table-success > td {
-    background-color: #dff0d8;
-  }
-  
-  .table-hover .table-success:hover {
-    background-color: #d0e9c6;
-  }
-  
-  .table-hover .table-success:hover > td,
-  .table-hover .table-success:hover > th {
-    background-color: #d0e9c6;
-  }
-  
-  .table-info,
-  .table-info > th,
-  .table-info > td {
-    background-color: #d9edf7;
-  }
-  
-  .table-hover .table-info:hover {
-    background-color: #c4e3f3;
-  }
-  
-  .table-hover .table-info:hover > td,
-  .table-hover .table-info:hover > th {
-    background-color: #c4e3f3;
-  }
-  
-  .table-warning,
-  .table-warning > th,
-  .table-warning > td {
-    background-color: #fcf8e3;
-  }
-  
-  .table-hover .table-warning:hover {
-    background-color: #faf2cc;
-  }
-  
-  .table-hover .table-warning:hover > td,
-  .table-hover .table-warning:hover > th {
-    background-color: #faf2cc;
-  }
-  
-  .table-danger,
-  .table-danger > th,
-  .table-danger > td {
-    background-color: #f2dede;
-  }
-  
-  .table-hover .table-danger:hover {
-    background-color: #ebcccc;
-  }
-  
-  .table-hover .table-danger:hover > td,
-  .table-hover .table-danger:hover > th {
-    background-color: #ebcccc;
-  }
-  
-  .thead-inverse th {
-    color: #fff;
-    background-color: #292b2c;
-  }
-  
-  .thead-default th {
-    color: #464a4c;
-    background-color: #eceeef;
-  }
-  
-  .table-inverse {
-    color: #fff;
-    background-color: #292b2c;
-  }
-  
-  .table-inverse th,
-  .table-inverse td,
-  .table-inverse thead th {
-    border-color: #fff;
-  }
-  
-  .table-inverse.table-bordered {
-    border: 0;
-  }
-  
-  .table-responsive {
-    display: block;
-    width: 100%;
-    overflow-x: auto;
-    -ms-overflow-style: -ms-autohiding-scrollbar;
-  }
-  
-  .table-responsive.table-bordered {
-    border: 0;
-  }
-  
