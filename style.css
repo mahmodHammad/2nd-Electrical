@@ -158,9 +158,7 @@ table {
 ;
     padding: 5vw;
   } */
-  *{
-      border: 1px solid red;
-  }
+
   .btn {
     font-size: 11px;
     padding: 4px 7px;
@@ -176,17 +174,15 @@ table {
   }
   .header {
     /* margin-top: 48px; */
-    padding: 32vh 0px 32vh 0px;
+    padding: 31vh 0px 30vh 0px;
   }
 }
 
 @media (max-width: 730px )  {
     @media(min-width:610px){
-        *{
-            border: 1px solid blue;
-        }
+        
         .header {
-          padding: 41vh 0px 40vh 0px !important;
+          padding: 43vh 0px 42vh 0px !important;
         }
         .btn {
           font-size: 11px;
