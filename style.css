@@ -9,7 +9,7 @@ body {
 }
 /* nav*******************/
 nav {
-  background-color: darkslategray;
+  background-color:#066286 ;
   padding: 4px 0px;
   margin: 0px;
   width: 100%;
@@ -31,7 +31,7 @@ nav ul li {
   border-radius: 5px;
 }
 nav ul li a {
-  color: #fff8dc;
+  color: #dcecff;
   text-decoration: none;
   font-weight: bold;
   font-size: 18px;
@@ -53,22 +53,11 @@ nav ul li:hover {
 .header {
   /* margin-top: 40px; */
   background: linear-gradient(
-    
-    /* #065186, */
         0deg,
-        rgb(59, 156, 156)
-        ,
-
-        rgb(220, 255, 210),
-        rgb(220, 255, 210),
-        rgb(59, 156, 156)
-            /* 0deg,
-    rgb(226, 124, 124),
-    #fff8dc,
-    #fff8dc,
-    rgb(236, 124, 124) */
-
-
+        #066286ec,
+        rgb(210, 254, 255),
+        rgb(210, 246, 255),
+        #066286ea
   );
   padding: 41vh 0px 41vh 0px;
   width: 100%;
@@ -83,13 +72,13 @@ nav ul li:hover {
   padding: 0px 8px;
   font-size: 1.5rem;
   font-weight: bold;
-  color: rgb(47, 79, 79);
+  color:#033549  ;
   text-transform: capitalize;
 }
 .header p span {
   font-size: 1.2rem;
   
-  color:rgb(50, 120, 70)
+  color:  #025170
 }
 table {
   text-transform: capitalize;
@@ -133,23 +122,12 @@ table {
 .btns {
   text-align: center;
   /* padding: 10px; */
-  background-color: #065186;
-  margin-bottom: -10px;
+  background-color:  #066286
+  ;
+  /* margin-bottom: -10px; */
   z-index: 10 !important;
 }
-/* .scroll {
-  display: block;
-  width: 20vw;
-  text-align: center;
-  background: #065186;
-  padding: 30px 20px;
-  color: #fff;
-  margin: -6vh 0 40px 35vw;
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%;
-  z-index: -2 !important;
-}
- */
+
 .btn {
   text-transform: capitalize;
 
@@ -164,13 +142,6 @@ table {
 }
 
 @media (max-width: 610px) {
-  /* .scroll {
-    padding: 30px 20px 15px;
-    margin: -7vh 0 20px 26vw;
-    border-radius: 50%;
-;
-    padding: 5vw;
-  } */
 
 .header h1 span{
     display: block;
@@ -278,7 +249,7 @@ footer p {
 }
 
 a {
-  color: rgb(29, 124, 34);
+  color:         #0b77a1  ;
   text-decoration: none;
   background-color: transparent;
 }
