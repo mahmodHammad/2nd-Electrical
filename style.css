@@ -9,7 +9,7 @@ body {
 }
 /* nav*******************/
 nav {
-  background-color: brown;
+  background-color: #065186;
   padding: 4px 0px;
   margin: 0px;
   width: 100%;
@@ -26,12 +26,12 @@ nav ul {
 nav ul li {
   display: inline-block;
   /* margin: 0 4%; */
-  background-color: rgba(222, 200, 200, 0.05);
+  background-color: rgba(200, 208, 222, 0.05);
   padding: 10px 6.4%;
   border-radius: 5px;
 }
 nav ul li a {
-  color: #fff8dc;
+  color: #dcefff;
   text-decoration: none;
   font-weight: bold;
   font-size: 18px;
@@ -61,10 +61,10 @@ nav ul li:hover {
 
 
     0deg,
-    rgb(255, 175, 160),
-    #fff8dc,
-    rgb(255, 248, 220),
-    rgb(255, 175, 160)
+    #1c6da7,
+    rgb(220, 245, 255),
+    rgb(220, 245, 255),
+    #065186
 
   );
   padding: 41vh 0px 41vh 0px;
@@ -80,11 +80,14 @@ nav ul li:hover {
   padding: 0px 8px;
   font-size: 1.5rem;
   font-weight: bold;
-  color: brown;
+  color: #043c64;
   text-transform: capitalize;
 }
 .header p span {
   font-size: 1.2rem;
+  color: #065186;
+
+
 }
 table {
   text-transform: capitalize;
@@ -262,23 +265,24 @@ footer p {
 }
 
 .table .thead-dark th {
+ 
   color: #fff;
   background-color: #343a40;
-  border-color: #454d55;
+  border-color: #343a40;
 }
 .table .thead-light th {
   color: #495057;
   background-color: #e9ecef;
-  border-color: #dee2e6;
+  border-color: #65aad8;
 }
 
 a {
-  color: rgb(223, 86, 45);
+  color: #237ab4;
   text-decoration: none;
   background-color: transparent;
 }
 a:hover {
-  color: #0056b3;
+  color: #3584b9;
   text-decoration: underline;
 }
 a:not([href]):not([tabindex]) {
