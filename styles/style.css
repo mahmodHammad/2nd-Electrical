@@ -31,7 +31,7 @@ nav ul li {
   border-radius: 5px;
 }
 nav ul li a {
-  color: #dcecff;
+  color: rgb(233, 238, 247);
   text-decoration: none;
   font-weight: bold;
   font-size: 18px;
@@ -39,7 +39,7 @@ nav ul li a {
   font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
 }
-nav ul li a:hover {
+nav ul li :hover {
   text-decoration: none;
   color: #fff;
 }
@@ -96,6 +96,8 @@ background-color:  rgb(230, 246, 255);
   font-size: 25px;
   color: rgb(6, 50, 78) !important;
   font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
 }
 
 .subject a:hover{
