@@ -1,6 +1,10 @@
+/**
+ *
+ */
+
 export default class createIframe {
   constructor(data) {
-      this.content = document.querySelector(".content");
+    this.content = document.querySelector(".content");
     this.data = data;
     this.c = 0;
     this.old = 0;
@@ -11,16 +15,35 @@ export default class createIframe {
     container.appendChild(btns);
 
     for (const e of givenData) {
-      let btn = this.createbtn(e.title, "btn", e.label, e.value, container);
+      let btn;
+      if (e.nestedbtn) {
+        btn = this.createbtn(e.title, "btn", e.label, e.value, container, true);
+      } else {
+        btn = this.createbtn(
+          e.title,
+          "btn",
+          e.label,
+          e.value,
+          container,
+          false
+        );
+      }
       btns.appendChild(btn);
     }
   };
-  createbtn(title, classe, label, value, container) {
+
+  createbtn(title, classe, label, value, container, isnested) {
     let btn = document.createElement("button");
+    console.log(value);
     btn.className = classe;
     btn.innerText = title;
-    btn.onclick = () =>
-      this.createIframe(label, value.rec, value.pdf, value.video, container);
+    btn.onclick = () => {
+      if (isnested) 
+        this.renderbtn(value);
+       else 
+        this.createIframe(label, value.rec, value.pdf, value.video, container);
+      
+    };
     return btn;
   }
 
@@ -33,28 +56,28 @@ export default class createIframe {
     scope.appendChild(hd3);
 
     if (recsrc) {
-        this.renderRecord(recsrc , scope)
+      this.renderRecord(recsrc, scope);
     }
     if (pdfsrc) {
-     this.renderpdf(pdfsrc , scope)
+      this.renderpdf(pdfsrc, scope);
     }
 
     if (video) {
-        this.rendervideo(video ,scope )
+      this.rendervideo(video, scope);
     }
 
     this.render(scope, container);
 
     return scope;
   }
-  renderRecord(recsrc ,scope){
+  renderRecord(recsrc, scope) {
     let rec = document.createElement("iframe");
     rec.src = recsrc;
     rec.className = "record";
     scope.appendChild(rec);
   }
 
-  renderpdf(pdfsrc, scope){
+  renderpdf(pdfsrc, scope) {
     let scroll = document.createElement("a");
     scroll.className = "scroll";
     scroll.href = "#doc";
@@ -66,10 +89,9 @@ export default class createIframe {
     pdf.className = "pdf";
     pdf.id = "doc";
     scope.appendChild(pdf);
-  
   }
 
-  rendervideo(video , scope){
+  rendervideo(video, scope) {
     let videoContainer = document.createElement("div");
     videoContainer.className = "subject-video";
 
@@ -97,7 +119,6 @@ export default class createIframe {
     scope.appendChild(videoContainer);
   }
 
-  
   render(child) {
     if (this.c === 0) {
       this.content.appendChild(child);
