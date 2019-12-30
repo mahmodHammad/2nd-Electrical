@@ -1,22 +1,22 @@
 const content = document.querySelector(".content");
 const footer = document.querySelector(".footer");
 
-function renderbtn() {
+
+const renderbtn = (givenData) => {
   let btns = document.createElement("div");
   btns.className = "btns";
   content.appendChild(btns);
 
-  for (const e of data) {
-    let btn = createbtn(e.lable, "btn", e.label, e.value);
+  for (const e of givenData) {
+    let btn = createbtn(e.title, "btn", e.label, e.value);
     btns.appendChild(btn);
   }
 }
-renderbtn();
 
-function createbtn(lable, classe, label, value) {
+function createbtn(title, classe, label, value) {
   let btn = document.createElement("button");
   btn.className = classe;
-  btn.innerText = lable;
+  btn.innerText = title;
   btn.onclick = () => create(label, value.rec, value.pdf);
   return btn;
 }
@@ -32,10 +32,12 @@ function create(label, recsrc, pdfsrc) {
 
   let hd3 = document.createElement("h3");
   hd3.innerText = label;
-
-  let rec = document.createElement("iframe");
-  rec.src = recsrc;
-  rec.className = "record";
+  if (recsrc) {
+    let rec = document.createElement("iframe");
+    rec.src = recsrc;
+    rec.className = "record";
+    rev.appendChild(rec);
+  }
 
   let pdf = document.createElement("iframe");
   pdf.src = pdfsrc;
@@ -46,7 +48,6 @@ function create(label, recsrc, pdfsrc) {
 
   rev.appendChild(scroll);
   rev.appendChild(hd3);
-  rev.appendChild(rec);
   rev.appendChild(pdf);
 
   render(rev);
@@ -69,3 +70,4 @@ function render(child) {
   }
   c++;
 }
+export default renderbtn
