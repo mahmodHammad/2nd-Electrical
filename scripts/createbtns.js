@@ -1,106 +1,114 @@
+export default class createIframe {
+  constructor(data) {
+      this.content = document.querySelector(".content");
+    this.data = data;
+    this.c = 0;
+    this.old = 0;
+  }
+  renderbtn = (givenData, container = this.content) => {
+    let btns = document.createElement("div");
+    btns.className = "btns";
+    container.appendChild(btns);
 
-export default class createIframe{
-    constructor(data){
-    //   this.content = document.querySelector(".content");
-      this.data=data
-      this.name="Hammad"
+    for (const e of givenData) {
+      let btn = this.createbtn(e.title, "btn", e.label, e.value, container);
+      btns.appendChild(btn);
     }
-     renderbtn = (givenData, container = content) => {
-      let btns = document.createElement("div");
-      btns.className = "btns";
-      container.appendChild(btns);
-    
-      for (const e of givenData) {
-        let btn = createbtn(e.title, "btn", e.label, e.value, container);
-        btns.appendChild(btn);
-      }
-    };
-     createbtn(title, classe, label, value, container) {
-      let btn = document.createElement("button");
-      btn.className = classe;
-      btn.innerText = title;
-      btn.onclick = () =>
-        createIframe(label, value.rec, value.pdf, value.video, container);
-      return btn;
-    }
+  };
+  createbtn(title, classe, label, value, container) {
+    let btn = document.createElement("button");
+    btn.className = classe;
+    btn.innerText = title;
+    btn.onclick = () =>
+      this.createIframe(label, value.rec, value.pdf, value.video, container);
+    return btn;
+  }
 
-
-    
-function createIframe(label, recsrc, pdfsrc, video, container) {
+  createIframe(label, recsrc, pdfsrc, video, container) {
     let scope = document.createElement("div");
     scope.className = "rev";
-    
+
     let hd3 = document.createElement("h3");
     hd3.innerText = label;
     scope.appendChild(hd3);
-  
+
     if (recsrc) {
-      let rec = document.createElement("iframe");
-      rec.src = recsrc;
-      rec.className = "record";
-      scope.appendChild(rec);
+        this.renderRecord(recsrc , scope)
     }
     if (pdfsrc) {
-      let scroll = document.createElement("a");
-      scroll.className = "scroll";
-      scroll.href = "#doc";
-      scroll.innerHTML = "scroll to pdf";
-      scope.appendChild(scroll);
-  
-      let pdf = document.createElement("iframe");
-      pdf.src = pdfsrc;
-      pdf.className = "pdf";
-      pdf.id = "doc";
-      scope.appendChild(pdf);
+     this.renderpdf(pdfsrc , scope)
     }
-  
+
     if (video) {
-      let videoContainer = document.createElement("div");
-      videoContainer.className = "subject-video";
-  
-      if (video.h1) {
-        let videoHeader = document.createElement("h1");
-        videoHeader.innerText = video.h1;
-        videoContainer.appendChild(videoHeader);
-      }
-  
-      if (video.p) {
-        let videoparagraph = document.createElement("p");
-        videoparagraph.innerText = video.p;
-        videoContainer.appendChild(videoparagraph);
-      }
-  
-      let videoIframe = document.createElement("iframe");
-      videoIframe.src = video.src;
-  
-      videoIframe.frameborder = "0";
-      videoIframe.allow =
-        "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture";
-      videoIframe.allowfullscreen = true;
-      
-      videoContainer.appendChild(videoIframe)
-      scope.appendChild(videoContainer);
+        this.rendervideo(video ,scope )
     }
-  
-    render(scope, container);
-  
+
+    this.render(scope, container);
+
     return scope;
   }
+  renderRecord(recsrc ,scope){
+    let rec = document.createElement("iframe");
+    rec.src = recsrc;
+    rec.className = "record";
+    scope.appendChild(rec);
+  }
+
+  renderpdf(pdfsrc, scope){
+    let scroll = document.createElement("a");
+    scroll.className = "scroll";
+    scroll.href = "#doc";
+    scroll.innerHTML = "scroll to pdf";
+    scope.appendChild(scroll);
+
+    let pdf = document.createElement("iframe");
+    pdf.src = pdfsrc;
+    pdf.className = "pdf";
+    pdf.id = "doc";
+    scope.appendChild(pdf);
   
-  let c = 0;
-  let old = 0;
-  function render(child, container) {
-    if (c === 0) {
-      container.appendChild(child);
-      old = child;
-      // footer.style.display = "block";
-    } else {
-      if (child !== old) {
-        container.replaceChild(child, old);
-        old = child;
-      }
+  }
+
+  rendervideo(video , scope){
+    let videoContainer = document.createElement("div");
+    videoContainer.className = "subject-video";
+
+    if (video.h1) {
+      let videoHeader = document.createElement("h1");
+      videoHeader.innerText = video.h1;
+      videoContainer.appendChild(videoHeader);
     }
-    c++;
+
+    if (video.p) {
+      let videoparagraph = document.createElement("p");
+      videoparagraph.innerText = video.p;
+      videoContainer.appendChild(videoparagraph);
+    }
+
+    let videoIframe = document.createElement("iframe");
+    videoIframe.src = video.src;
+
+    videoIframe.frameborder = "0";
+    videoIframe.allow =
+      "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture";
+    videoIframe.allowfullscreen = true;
+
+    videoContainer.appendChild(videoIframe);
+    scope.appendChild(videoContainer);
   }
 
   
+  render(child) {
+    if (this.c === 0) {
+      this.content.appendChild(child);
+      this.old = child;
+      // footer.style.display = "block";
+    } else {
+      if (child !== this.old) {
+        this.content.replaceChild(child, this.old);
+        this.old = child;
+      }
+    }
+    this.c++;
+  }
+}

@@ -38,61 +38,66 @@
     <div class="cont"></div>
 
     <script type="module">
-      import createbutton from "../scripts/script.js";
-      const data = [
-        {
-          title: "mo salah 1",
-          label: "heat transfer 1",
-          value: {
-            rec:
-              "https://drive.google.com/file/d/1HQNOG0fyPR1_I6P2M8QE0Exzmpk2ULnz/preview",
-            pdf:
-              "https://drive.google.com/file/d/12WVBb7Z8zZGIWDxC0cpPaoFD3X4YJh-q/preview"
-          }
-        },
-        {
-          title: "emf 2",
-          label: "heat transfer2",
-          value: {
-            rec:
-              "https://drive.google.com/file/d/1VRpK-ywyTwQGZBfZ7cIeN1vXHU57-cKo/preview",
-            pdf:
-              "https://drive.google.com/file/d/1Tt-xoeqQitA3ox6tOYbIoHcyn6F61gwD/preview"
-          }
-        },
-        {
-          title: "engines",
-          label: "engines + Final Exams",
-          value: {
-            rec:
-              "https://drive.google.com/file/d/1okiSimFeYe7cGdXWOaLpnpi-_61mBOdj/preview",
-            pdf:
-              "https://drive.google.com/file/d/1f2BlsCAF9QCAH6z6N9qtsjwE0CK6Zdqi/preview"
-          }
-        },
-        {
-          title: "wtf 1",
-          label: "thermodynamics before Mid Term",
-          value: {
-            rec:
-              "https://drive.google.com/file/d/1-A7mUB8sCja1-vBX74VRuzS8Y82u8Dao/preview",
-            pdf:
-              "https://drive.google.com/file/d/1ewP-uuxdPjK1UnSyhDM4XTkzdbzXpyx7/preview"
-          }
-        },
-        {
-          title: "kuak 2",
-          label: "thermodynamics after Mid Term",
-          value: {
-            rec:
-              "https://drive.google.com/file/d/14gw6N-nenYMfIa9BPIiRerwLoCuaF8OO/preview",
-            pdf:
-              "https://drive.google.com/file/d/1IeEYvpW-ruuY9wQeP7H49AmKkVK4lR1b/preview"
-          }
-        }
-      ];
+const data = [
+  {
+    title: "mo salah 1",
+    label: "heat transfer 1",
+    value: {
+      rec:
+        "https://drive.google.com/file/d/1HQNOG0fyPR1_I6P2M8QE0Exzmpk2ULnz/preview",
+      pdf:
+        "https://drive.google.com/file/d/12WVBb7Z8zZGIWDxC0cpPaoFD3X4YJh-q/preview"
+    }
+  },
+  {
+    title: "emf 2",
+    label: "heat transfer2",
+    value: {
+      rec:
+        "https://drive.google.com/file/d/1VRpK-ywyTwQGZBfZ7cIeN1vXHU57-cKo/preview",
+      pdf:
+        "https://drive.google.com/file/d/1Tt-xoeqQitA3ox6tOYbIoHcyn6F61gwD/preview"
+    }
+  },
+  {
+    title: "engines",
+    label: "engines + Final Exams",
+    value: {
+      rec:
+        "https://drive.google.com/file/d/1okiSimFeYe7cGdXWOaLpnpi-_61mBOdj/preview",
+      pdf:
+        "https://drive.google.com/file/d/1f2BlsCAF9QCAH6z6N9qtsjwE0CK6Zdqi/preview"
+    }
+  },
+  {
+    title: "wtf 1",
+    label: "thermodynamics before Mid Term",
+    value: {
+      rec:
+        "https://drive.google.com/file/d/1-A7mUB8sCja1-vBX74VRuzS8Y82u8Dao/preview",
+      pdf:
+        "https://drive.google.com/file/d/1ewP-uuxdPjK1UnSyhDM4XTkzdbzXpyx7/preview"
+    }
+  },
+  {
+    title: "walk alone 2",
+    label: "thermodynamics after Mid Term",
+    value: {
+      rec:
+        "https://drive.google.com/file/d/14gw6N-nenYMfIa9BPIiRerwLoCuaF8OO/preview",
+      pdf:
+        "https://drive.google.com/file/d/1IeEYvpW-ruuY9wQeP7H49AmKkVK4lR1b/preview"
+    }
+  }
+];
 
-      createbutton(data, container);
-    </script>
+
+const container=document.querySelector(".content")
+      import creater from "../scripts/createbtns.js"
+
+      const inst = new creater
+      inst.renderbtn(data ,container)
+
+</script>
   </body>
 </html>
