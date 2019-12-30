@@ -9,7 +9,7 @@ body {
 }
 /* nav*******************/
 nav {
-  background-color:#066286 ;
+  background-color: #066286;
   padding: 4px 0px;
   margin: 0px;
   width: 100%;
@@ -53,11 +53,11 @@ nav ul li:hover {
 .header {
   /* margin-top: 40px; */
   background: linear-gradient(
-        0deg,
-        #066286ec,
-        rgb(210, 254, 255),
-        rgb(210, 246, 255),
-        #066286ea
+    0deg,
+    #066286ec,
+    rgb(210, 254, 255),
+    rgb(210, 246, 255),
+    #066286ea
   );
   padding: 41vh 0px 41vh 0px;
   width: 100%;
@@ -72,16 +72,34 @@ nav ul li:hover {
   padding: 0px 8px;
   font-size: 1.5rem;
   font-weight: bold;
-  color:#033549  ;
+  color: #033549;
   text-transform: capitalize;
 }
 .header p span {
   font-size: 1.2rem;
-  
-  color:  #025170
+
+  color: #025170;
 }
-table {
-  text-transform: capitalize;
+
+.subjects {
+  text-align: center;
+background-color:  rgb(230, 246, 255);
+
+  
+}
+.subject{
+  padding: 5vh 2vh;
+  background-color: #fff;
+  margin: 10px;
+}
+.subject a {
+  font-size: 25px;
+  color: rgb(6, 50, 78) !important;
+  font-weight: 600;
+}
+
+.subject a:hover{
+  text-decoration: none;
 }
 
 /* frame */
@@ -118,40 +136,51 @@ table {
 .content {
   padding: 2% 0;
 }
-.nestedBtns{
 
+.nestedBtns {
+  padding: 25px 0;
   text-align: center;
-  background-color:  #860606 ;
+  background: linear-gradient(180deg, #066286f3, rgb(255, 255, 255));
+}
+.nestedBtns button{
+  color: #dee9ee;
+  background-color: #055482 !important;
+  margin: 8px 1%;
+
+
 }
 .btns {
   text-align: center;
   /* padding: 10px; */
-  background-color:  #066286 ;
+/* 055482 */
+  background-color: #066286ec;
   /* margin-bottom: -10px; */
 }
 
 .btn {
   text-transform: capitalize;
-
-  color: #444;
-  margin: 15px 2%;
+  color: #055482;
+  margin: 12px 2.3%;
   border: none;
-  padding: 9px 10px;
+  padding: 10px 25px;
   border-radius: 6px;
-  font-size: 18px;
+  font-size: 19px;
   font-weight: bold;
-  background-color: #ddd !important;
+  background-color: #d3e3e9 !important;
 }
 
 @media (max-width: 610px) {
-
-.header h1 span{
-    display: block;
+.nestedBtns button{
+  font-size: 9px;
 }
+ 
+  .header h1 span {
+    display: block;
+  }
   .btn {
     font-size: 11px;
-    padding: 4px 7px;
-    margin: 12px 1%;
+    padding: 4px 9px;
+    margin: 9px 1%;
   }
   .subject-video h1 {
     margin-bottom: 10%;
@@ -162,27 +191,24 @@ table {
     height: 58vw;
   }
   .header {
-    /* margin-top: 48px; */
     padding: 30vh 0px 30vh 0px;
   }
-  footer{
-    font-size:13px;
+  footer {
+    font-size: 11px;
   }
 }
 
-@media (max-width: 730px )  {
-    @media(min-width:610px){
-        
-        .header {
-          padding: 43vh 0px 42vh 0px !important;
-        }
-        .btn {
-          font-size: 11px;
-          padding: 1.6vw 2vw;
-          margin: 12px 1%;
-        }
-
+@media (max-width: 730px) {
+  @media (min-width: 610px) {
+    .header {
+      padding: 43vh 0px 42vh 0px !important;
     }
+    .btn {
+      font-size: 11px;
+      padding: 1.6vw 2vw;
+      margin: 12px 1%;
+    }
+  }
 }
 
 .btn:hover {
@@ -202,7 +228,7 @@ footer {
   background-color: #000;
   padding: 20px 0;
 
-  color: cornsilk;
+  color: rgb(220, 245, 255);
   text-align: center;
 }
 footer p {
@@ -212,46 +238,13 @@ footer p {
   display: none;
 }
 
-
-
-
-
 /* ********************************************* */
 /* ********************************************* */
 /* ********************************************* */
 /* ********************************************* */
-
-.table {
-  width: 100%;
-  margin-bottom: 1rem;
-  color: #212529;
-}
-.table td,
-.table th {
-  padding: 0.75rem;
-  border: none;
-
-  vertical-align: top;
-}
-.table thead th {
-    border: none;
-
-    vertical-align: bottom;
-}
-
-.table .thead-dark th {
-  color: #fff;
-  background-color: #343a40;
-  border-color: #454d55;
-}
-.table .thead-light th {
-  color: #495057;
-  background-color: #e9ecef;
-  border-color: #dee2e6;
-}
 
 a {
-  color:         #0b77a1  ;
+  color: #0b77a1;
   text-decoration: none;
   background-color: transparent;
 }

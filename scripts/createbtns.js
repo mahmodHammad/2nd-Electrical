@@ -1,7 +1,3 @@
-/**
- *
- */
-
 export default class createIframe {
   constructor(data) {
     this.content = document.querySelector(".content");
@@ -80,8 +76,7 @@ export default class createIframe {
   createIframe(label, recsrc, pdfsrc, video, container) {
     let scope = document.createElement("div");
     scope.className = "rev";
-    console.log(video)
-
+    
     let hd3 = document.createElement("h3");
     hd3.innerText = label;
     scope.appendChild(hd3);
