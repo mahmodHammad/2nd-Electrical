@@ -32,192 +32,293 @@
     </div>
 
     <script type="module">
+      const Notes = [
+        {
+          title: "vectors",
+          label: "vectors revistion",
+          value: {
+            pdf:
+              "https://drive.google.com/file/d/1lSbLaVXj-AZK1hcg7jGAttbY0xm5o2Oo/preview"
+          }
+        },
+        {
+          title: "EM intensity",
+          label: "2 -Electric Field Intensity",
+          value: {
+            pdf:
+              "https://drive.google.com/file/d/1DNHySimBKNO6WaWHZcg_wr2_IXKgCgqt/preview"
+          }
+        },
+        {
+          title: "sheet 3-A",
+          label: "clolomb' Law , EF intenisty",
+          value: {
+            pdf:
+              "https://drive.google.com/file/d/1IrhYdaN5OhWfqPVE7Wu-KjtPoe7VeJVc/preview"
+          }
+        },
+        {
+          title: "gauss",
+          label: "Electric flux denisty  & gauss",
+          value: {
+            pdf:
+              "https://drive.google.com/file/d/1bNvV-6QNYbKY-Lftuqo81svF1YvM96-P/preview"
+          }
+        },
+        {
+          title: "sheet 2-a",
+          label: " elctric flux denisty & gause Sheet",
+          value: {
+            pdf:
+              "https://drive.google.com/file/d/1Efmsv9VfBN7cjXM1aaIPxiIFE_bfBhz_/preview"
+          }
+        },
+        {
+          title: "energy-potential",
+          label: "",
+          value: {
+            pdf:
+              "https://drive.google.com/file/d/1ipYFT89MFCY-hUymal0AKELBkR3KUzBL/preview"
+          }
+        },
+        {
+          title: "sheet energy",
+          label: "sheet energy and potential",
+          value: {
+            pdf:
+              "https://drive.google.com/file/d/1_JDf1e4FsRL9mZ6mWqY9YFkUtCpS0S-t/preview"
+          }
+        },
+        {
+          title: "capicity",
+          label: "capicity",
+          value: {
+            pdf:
+              "https://drive.google.com/file/d/114BkdqgEMPaWyNH-XPxIHb1uksekdKnh/preview"
+          }
+        },
+        {
+          title: "laplace -poisson",
+          label: "laplace -poisson",
+          value: {
+            pdf:
+              "https://drive.google.com/file/d/1ShCH2bBTqeSIHOOy0p9Qo79EANPCKem5/preview"
+          }
+        },
+        {
+          title: "Magnetic Fields",
+          label: "biot-savart law + Amper's law",
+          value: {
+            pdf:
+              "https://drive.google.com/file/d/13lAjTlpzCpq_4Rqhap862JiZRD2lPEts/preview"
+          }
+        },
+        {
+          title: "sheet magnetic",
+          label: "sheet 7 on biot savart's law + Amper's law",
+          value: {
+            pdf:
+              "https://drive.google.com/file/d/1s3zU16sWFWAeurzFpIU9rM9V6-pHaUqU/preview"
+          }
+        },
+        {
+          title: "magnetic forces",
+          label: "Magnetic forces",
+          value: {
+            pdf:
+              "https://drive.google.com/file/d/1NkvwzWgFYgEF-uBQHJ2NFPtDaMK2vEOt/preview"
+          }
+        },
+        {
+          title: "magnetic circuts",
+          label: "magnetic circuts",
+          value: {
+            pdf:
+              "https://drive.google.com/file/d/1anrOLy0PY4UArNy0KYIFVKyeNRoc_GbB/preview"
+          }
+        },
+        {
+          title: "Maxwell's equations",
+          label: "time varying fields + Maxwell's equations",
+          value: {
+            pdf:
+              "https://drive.google.com/file/d/1BW3ha-dz9OgooqytGJuTj2Ytp9WBeE0T/preview"
+          }
+        },
+        {
+          title: "lossless",
+          label: "Plane waves (lossless)",
+          value: {
+            pdf:
+              "https://drive.google.com/file/d/1dJSBMe8_ef8ckzSDr8J9GIn6oEwFm1CG/preview"
+          }
+        }
+      ];
+      const lecs = [
+        {
+          title: "lec1 E",
+          label: "vectors",
+          value: {
+            pdf:
+              "https://drive.google.com/file/d/1VaK8igazScz2G3YBE0VLQYi4_2sowXA5/preview",
+            rec:
+              "https://drive.google.com/file/d/18jy6breYuhjFw7OYJNnMwqKJMQrgF1Bv/preview"
+          }
+        },
+        {
+          title: "lec2 E",
+          label: "",
+          value: {
+            pdf:
+              "https://drive.google.com/file/d/1VaK8igazScz2G3YBE0VLQYi4_2sowXA5/preview",
+            rec:
+              "https://drive.google.com/file/d/18jy6breYuhjFw7OYJNnMwqKJMQrgF1Bv/preview"
+          }
+        },
+        {
+          title: "lec3 E",
+          label: "",
+          value: {
+            pdf:
+              "https://drive.google.com/file/d/1h_n5PYvWNkbnte70teQp5YlTzZQP-wRf/preview",
+            rec:
+              "https://drive.google.com/file/d/12TTS4OfCu2l2mLCd3l7rb7tAdlDBwIBz/preview"
+          }
+        },
+        {
+          title: "lec4 E",
+          label: "types of materials",
+          value: {
+            pdf:
+              "https://drive.google.com/file/d/1Ms3vT8vqI6nrdVdly6RWL5-_5oRv715y/preview",
+            rec:
+              "https://drive.google.com/file/d/1XT2v0uNLuEVHK0jJWQNqBsTu8w8JVo4T/preview"
+          }
+        },
+        {
+          title: "lec5 E",
+          label: "capacitanc",
+          value: {
+            pdf:
+              "https://drive.google.com/file/d/1za2HcruOdLoUkaHgLiyRUWKKAL6IJzIR/preview",
+            rec:
+              "https://drive.google.com/file/d/1K0FUdeoB18JTRR_nCKsyQdnV8De2HjKh/preview"
+          }
+        },
+        {
+          title: "lec6 E",
+          label: "laplace & poisson",
+          value: {
+            pdf:
+              "https://drive.google.com/file/d/1x0EakhHJ9HCG1mVDXZh7p_zH-yhRNHaL/preview"
+          }
+        },
+        {
+          title: "lec1 M",
+          label: "magnetic field denisty",
+          value: {
+            pdf:
+              "https://drive.google.com/file/d/1J4TG_aoAnUWo6iuMw2YHxTjPhG7NnJQt/preview"
+          }
+        },
+        {
+          title: "lec2 M",
+          label: "Magnetic Force",
+          value: {
+            pdf:
+              "https://drive.google.com/file/d/1skaLr-dpsh3xkkvTEg_vu_-3hNJgTsjU/preview"
+          }
+        },
+        {
+          title: "lec3 M",
+          label: "self inductance & magnetic circuit",
+          value: {
+            pdf:
+              "https://drive.google.com/file/d/1xFJ5YFarIljl1QcOBGlttgZNfVOq102h/preview"
+          }
+        },
+        {
+          title: "lec1 C",
+          label: "",
+          value: {
+            pdf:
+              "https://drive.google.com/file/d/1qhh2ZTCkrcWe7tMleN3CDTra1vwjl__h/preview"
+          }
+        },
+        {
+          title: "lec2 C",
+          label: "Maxwell , lossy",
+          value: {
+            pdf:
+              "https://drive.google.com/file/d/1upS_--AAqjwmklLjBQfkNHhtcBKZofil/preview"
+          }
+        },
+        {
+          title: "lec3 C",
+          label: "lossy , power propagation",
+          value: {
+            pdf:
+              "https://drive.google.com/file/d/1zKZs4it9u_GvcnIMrgh2LCebU4FD0lIQ/preview"
+          }
+        }
+      ];
+
+      const Videos = [
+        {
+          title: "section",
+          label: "",
+          value: {
+            video: {
+              h1: "section mohamed mostafa",
+              src:
+                "https://www.youtube.com/embed/videoseries?list=PL6ElMp8lKLCCs_Qz60lG1HrKNuFMEsbZ1"
+            }
+          }
+        },
+        {
+          title: "Lectures",
+          label: "",
+          value: {
+            video: {
+              h1: "communication part",
+              src:
+                "https://www.youtube.com/embed/videoseries?list=PL6ElMp8lKLCC0GMwX4f3-mjSSTUv7aTvc"
+            }
+          }
+        }
+      ];
       const data = [
         {
           title: "Lectures",
           label: " magnegic written lectures",
           hasNestedButtons: true,
-          value:
-            [
-              {
-                title: "lec1",
-                label: "cvsdwgf analysis",
-                value:{
-                  pdf:"https://drive.google.com/file/d/12WVBb7Z8zZGIWDxC0cpPaoFD3X4YJh-q/preview"
-                }
-                  
-              },
-              {
-                title: "lec2",
-                label: "attack analysis",
-                value:{
-                  pdf:"https://drive.google.com/file/d/12WVBb7Z8zZGIWDxC0cpPaoFD3X4YJh-q/preview"
-                }
-                  
-              },
-              {
-                title: "lol3",
-                label: "v analysis",
-                value:{
-                  pdf:"https://drive.google.com/file/d/12WVBb7Z8zZGIWDxC0cpPaoFD3X4YJh-q/preview"
-                }
-                  
-              },
-              {
-                title: "lec4",
-                label: "kskska",
-                value:{
-                  pdf:"https://drive.google.com/file/d/12WVBb7Z8zZGIWDxC0cpPaoFD3X4YJh-q/preview"
-                }
-                  
-              },{
-                title: "lec4",
-                label: "kskska",
-                value:{
-                  pdf:"https://drive.google.com/file/d/12WVBb7Z8zZGIWDxC0cpPaoFD3X4YJh-q/preview"
-                }
-                  
-              },{
-                title: "lec4",
-                label: "kskska",
-                value:{
-                  pdf:"https://drive.google.com/file/d/12WVBb7Z8zZGIWDxC0cpPaoFD3X4YJh-q/preview"
-                }
-                  
-              },{
-                title: "lec4",
-                label: "kskska",
-                value:{
-                  pdf:"https://drive.google.com/file/d/12WVBb7Z8zZGIWDxC0cpPaoFD3X4YJh-q/preview"
-                }
-                  
-              },{
-                title: "lec4",
-                label: "kskska",
-                value:{
-                  pdf:"https://drive.google.com/file/d/12WVBb7Z8zZGIWDxC0cpPaoFD3X4YJh-q/preview"
-                }
-                  
-              },{
-                title: "lec4",
-                label: "kskska",
-                value:{
-                  pdf:"https://drive.google.com/file/d/12WVBb7Z8zZGIWDxC0cpPaoFD3X4YJh-q/preview"
-                }
-                  
-              },
-              {
-                title: "lec10",
-                label: "kskska",
-                value:{
-                  pdf:"https://drive.google.com/file/d/12WVBb7Z8zZGIWDxC0cpPaoFD3X4YJh-q/preview"
-                }
-                  
-              },
-              {
-                title: "lec11",
-                label: "kskskqdffffa",
-                value:{
-                  pdf:"https://drive.google.com/file/d/12WVBb7Z8zZGIWDxC0cpPaoFD3X4YJh-q/preview"
-                }
-                  
-              }
-            ]
+          value: lecs
+        },
+        {
+          title: "Notes",
+          label: " notes sobhy written lectures",
+          hasNestedButtons: true,
+          value: Notes
         },
         {
           title: "videos",
-          label: "Islam Magdy , communication docture",
-          hasNestedButtons:true,
-          value:
-            [
-              {
-                title: "toots",
-                label: "dicl analysis",
-                value:
-                  "https://drive.google.com/file/d/12WVBb7Z8zZGIWDxC0cpPaoFD3X4YJh-q/preview"
-              },
-              {
-                title: "vewrah",
-                label: "vectorfhfhf analysis",
-                value:
-                  "https://drive.google.com/file/d/12WVBb7Z8zZGIWDxC0cpPaoFD3X4YJh-q/preview"
-              },
-              {
-                title: "lol",
-                label: "v face",
-                value:
-                  "https://drive.google.com/file/d/12WVBb7Z8zZGIWDxC0cpPaoFD3X4YJh-q/preview"
-              },
-              {
-                title: "howhow",
-                label: "kskska",
-                value:
-                  "https://drive.google.com/file/d/12WVBb7Z8zZGIWDxC0cpPaoFD3X4YJh-q/preview"
-              }
-            ]
-        },
+          label: " howowo",
+          hasNestedButtons: true,
+          value: Videos
+        }
         // {
-        //   title: "notes",
-        //   label: "eng-mohamed sobhy",
-        //   value: {
-        //     rec:
-        //       "https://drive.google.com/file/d/1okiSimFeYe7cGdXWOaLpnpi-_61mBOdj/preview",
-        //     pdf:
-        //       "https://drive.google.com/file/d/1f2BlsCAF9QCAH6z6N9qtsjwE0CK6Zdqi/preview"
-        //   }
-        // },
-        // {
-        //   title: "revision",
-        //   label: "records - notes",
-        //   value: {
-        //     rec:
-        //       "https://drive.google.com/file/d/1-A7mUB8sCja1-vBX74VRuzS8Y82u8Dao/preview",
-        //     pdf:
-        //       "https://drive.google.com/file/d/1ewP-uuxdPjK1UnSyhDM4XTkzdbzXpyx7/preview"
-        //   }
-        // },
-        // {
-        //   title: "records",
-        //   label: "thermodynamics after Mid Term",
-        //   value: {
-        //     rec:
-        //       "https://drive.google.com/file/d/14gw6N-nenYMfIa9BPIiRerwLoCuaF8OO/preview",
-        //     pdf:
-        //       "https://drive.google.com/file/d/1IeEYvpW-ruuY9wQeP7H49AmKkVK4lR1b/preview"
-        //   }
+        //   title: "Revisions",
+        //   label: " ",
+        //   hasNestedButtons: true,
+        //   value: Revisions
         // }
       ];
-/*
 
-  handleNestedBtn(value ,container){
-    let nestedBtns = document.createElement("div");
-    nestedBtns.className = "nestedBtns";
-    
-    if (this.b === 0) {
-        const createdBtn=this.createbtn(value.title ,"btn",value.label,value.value)
-        nestedBtns.appendChild(createdBtn);
-        this.oldbtn = createdBtn;
-      } else {
-        if (createdBtn !== this.oldbtn) {
-            nestedBtns.replaceChild(child, this.oldbtn);
-          this.oldbtn = createdBtn;
-        }
-      }
-      this.c++;
-    //   this.renderbtn(value)
-    container.appendChild(nestedBtns)
-    return nestedBtns
-    }
-
-
-*/
       const container = document.querySelector(".content");
       import creater from "../scripts/createbtns.js";
 
       const inst = new creater();
-      const x = inst.renderbtn(data, container,false);
-      // inst.renderbtn(data ,container)
-      console.log(x);
+      const x = inst.renderbtn(data, container, false);
     </script>
   </body>
 </html>

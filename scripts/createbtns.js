@@ -80,6 +80,7 @@ export default class createIframe {
   createIframe(label, recsrc, pdfsrc, video, container) {
     let scope = document.createElement("div");
     scope.className = "rev";
+    console.log(video)
 
     let hd3 = document.createElement("h3");
     hd3.innerText = label;
@@ -121,6 +122,7 @@ export default class createIframe {
   }
 
   rendervideo(video, scope) {
+      console.log(video)
     let videoContainer = document.createElement("div");
     videoContainer.className = "subject-video";
 
