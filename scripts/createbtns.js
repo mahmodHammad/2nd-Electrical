@@ -9,40 +9,52 @@ export default class createIframe {
     this.c = 0;
     this.old = 0;
   }
-  renderbtn = (givenData, container = this.content) => {
+
+  renderbtn = (givenData, container = this.content ,isNested) => {
     let btns = document.createElement("div");
     btns.className = "btns";
     container.appendChild(btns);
 
+    let nestedbtns = document.createElement("div");
+    nestedbtns.className = "nestedBtns";
+    console.log(isNested)
+    if (isNested) {
+      for (const e of givenData) {
+        let NestedBtn = this.generatebtn(e);
+        nestedbtns.appendChild(NestedBtn);
+      } 
+    }
     for (const e of givenData) {
-      let btn;
-      if (e.nestedbtn) {
-        btn = this.createbtn(e.title, "btn", e.label, e.value, container, true);
-      } else {
-        btn = this.createbtn(
-          e.title,
-          "btn",
-          e.label,
-          e.value,
-          container,
-          false
-        );
-      }
+      let btn = this.generatebtn(e);
       btns.appendChild(btn);
     }
   };
 
-  createbtn(title, classe, label, value, container, isnested) {
+  generatebtn(e) {
+    let btn;
+    if (e.hasNestedButtons) {
+      btn = this.createbtn(e.title, "btn", e.label, e.value, this.container, true);
+    } else {
+      btn = this.createbtn(e.title, "btn", e.label, e.value, this.container, false);
+    }
+    return btn;
+  }
+
+  createbtn(title, classe, label, value, container, nested) {
     let btn = document.createElement("button");
-    console.log(value);
+    console.log(nested);
     btn.className = classe;
     btn.innerText = title;
     btn.onclick = () => {
-      if (isnested) 
-        this.renderbtn(value);
-       else 
-        this.createIframe(label, value.rec, value.pdf, value.video, container);
-      
+      nested
+        ? this.renderbtn(value ,this.content ,true)
+        : this.createIframe(
+            label,
+            value.rec,
+            value.pdf,
+            value.video,
+            container
+          );
     };
     return btn;
   }
@@ -61,7 +73,6 @@ export default class createIframe {
     if (pdfsrc) {
       this.renderpdf(pdfsrc, scope);
     }
-
     if (video) {
       this.rendervideo(video, scope);
     }

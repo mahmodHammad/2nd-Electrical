@@ -36,7 +36,7 @@
         {
           title: "Lectures",
           label: " magnegic written lectures",
-          nestedbtn: true,
+          hasNestedButtons: true,
           value:
             [
               {
@@ -111,7 +111,7 @@
         {
           title: "videos",
           label: "Islam Magdy , communication docture",
-          nestedbtn:true,
+          hasNestedButtons:true,
           value:
             [
               {
@@ -171,12 +171,35 @@
         //   }
         // }
       ];
+/*
 
+  handleNestedBtn(value ,container){
+    let nestedBtns = document.createElement("div");
+    nestedBtns.className = "nestedBtns";
+    
+    if (this.b === 0) {
+        const createdBtn=this.createbtn(value.title ,"btn",value.label,value.value)
+        nestedBtns.appendChild(createdBtn);
+        this.oldbtn = createdBtn;
+      } else {
+        if (createdBtn !== this.oldbtn) {
+            nestedBtns.replaceChild(child, this.oldbtn);
+          this.oldbtn = createdBtn;
+        }
+      }
+      this.c++;
+    //   this.renderbtn(value)
+    container.appendChild(nestedBtns)
+    return nestedBtns
+    }
+
+
+*/
       const container = document.querySelector(".content");
       import creater from "../scripts/createbtns.js";
 
       const inst = new creater();
-      const x = inst.renderbtn(data, container);
+      const x = inst.renderbtn(data, container,true);
       // inst.renderbtn(data ,container)
       console.log(x);
     </script>

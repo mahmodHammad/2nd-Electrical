@@ -118,14 +118,16 @@ table {
 .content {
   padding: 2% 0;
 }
+.nestedBtns{
 
+  text-align: center;
+  background-color:  #860606 ;
+}
 .btns {
   text-align: center;
   /* padding: 10px; */
-  background-color:  #066286
-  ;
+  background-color:  #066286 ;
   /* margin-bottom: -10px; */
-  z-index: 10 !important;
 }
 
 .btn {
