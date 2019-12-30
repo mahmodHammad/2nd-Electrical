@@ -8,46 +8,64 @@ export default class createIframe {
     this.data = data;
     this.c = 0;
     this.old = 0;
+    this.b = 0;
+    this.oldbtn = 0;
   }
 
-  renderbtn = (givenData, container = this.content ,isNested) => {
+  renderbtn = (givenData, container = this.content, isNested) => {
     let btns = document.createElement("div");
     btns.className = "btns";
     container.appendChild(btns);
 
     let nestedbtns = document.createElement("div");
     nestedbtns.className = "nestedBtns";
-    console.log(isNested)
     if (isNested) {
+      let NestedBtn;
       for (const e of givenData) {
-        let NestedBtn = this.generatebtn(e);
+        NestedBtn = this.generatebtn(e);
         nestedbtns.appendChild(NestedBtn);
-      } 
-    }
-    for (const e of givenData) {
-      let btn = this.generatebtn(e);
-      btns.appendChild(btn);
+      }
+
+      this.renderOnce("b", container, "oldbtn", nestedbtns);
+    } else {
+      for (const e of givenData) {
+        let btn = this.generatebtn(e);
+        btns.appendChild(btn);
+      }
     }
   };
 
   generatebtn(e) {
     let btn;
     if (e.hasNestedButtons) {
-      btn = this.createbtn(e.title, "btn", e.label, e.value, this.container, true);
+      btn = this.createbtn(
+        e.title,
+        "btn",
+        e.label,
+        e.value,
+        this.container,
+        true
+      );
     } else {
-      btn = this.createbtn(e.title, "btn", e.label, e.value, this.container, false);
+      btn = this.createbtn(
+        e.title,
+        "btn",
+        e.label,
+        e.value,
+        this.container,
+        false
+      );
     }
     return btn;
   }
 
   createbtn(title, classe, label, value, container, nested) {
     let btn = document.createElement("button");
-    console.log(nested);
     btn.className = classe;
     btn.innerText = title;
     btn.onclick = () => {
       nested
-        ? this.renderbtn(value ,this.content ,true)
+        ? this.renderbtn(value, this.content, true)
         : this.createIframe(
             label,
             value.rec,
@@ -131,16 +149,20 @@ export default class createIframe {
   }
 
   render(child) {
-    if (this.c === 0) {
-      this.content.appendChild(child);
-      this.old = child;
+    this.renderOnce("c", this.content, "old", child);
+  }
+
+  renderOnce(counter, container, old, child) {
+    if (this[counter] === 0) {
+      container.appendChild(child);
+      this[old] = child;
       // footer.style.display = "block";
     } else {
-      if (child !== this.old) {
-        this.content.replaceChild(child, this.old);
-        this.old = child;
+      if (child !== this[old]) {
+        container.replaceChild(child, this[old]);
+        this[old] = child;
       }
     }
-    this.c++;
+    this[counter]++;
   }
 }
