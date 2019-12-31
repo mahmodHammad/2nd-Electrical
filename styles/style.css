@@ -292,7 +292,10 @@ footer span {
     margin: 2px;
     color: #b30027;
 }
-
+.up {
+    padding: 3px;
+    text-align: center;
+}
 .up a {
     position: fixed;
     background-color: rgba(7, 104, 139, 0.4);
