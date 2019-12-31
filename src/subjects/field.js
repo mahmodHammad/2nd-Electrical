@@ -277,6 +277,16 @@ const Videos = [{
                 src: "https://www.youtube.com/embed/videoseries?list=PLkOpA9uAb9H25y_JZzGYel9_7IEbeoEY2"
             }
         }
+    },
+    {
+        title: "course",
+        label: "",
+        value: {
+            video: {
+                h1: "Eng-Mohamed Sobhy ",
+                src: "https://www.youtube.com/embed/videoseries?list=PL6ElMp8lKLCAIMqYrDKwH3MGQV2d6-CO1"
+            }
+        }
     }
 ];
 
