@@ -235,7 +235,7 @@
       },
       {
         title: "lec1 C",
-        label: "",
+        label: "intoduction",
         value: {
           pdf:
             "https://drive.google.com/file/d/1qhh2ZTCkrcWe7tMleN3CDTra1vwjl__h/preview"
@@ -308,7 +308,8 @@
       }
 
     ]
-       const Videos = [
+
+    const Videos = [
       {
         title: "section power",
         label: "",
@@ -355,6 +356,59 @@
       }
     ];
 
+    const slides = [
+
+      {
+        title: "mag 1",
+        label: "Biot-savart - amper",
+        value: {
+          pdf: "https://drive.google.com/file/d/1J4TG_aoAnUWo6iuMw2YHxTjPhG7NnJQt/preview"
+        }
+      }
+      ,
+      {
+        title: "mag 2",
+        label: " Magnetic Force",
+        value: {
+          pdf: "https://drive.google.com/file/d/1skaLr-dpsh3xkkvTEg_vu_-3hNJgTsjU/preview"
+        }
+      },
+      {
+        title: "mag 3",
+        label: "self induction - Magnetic circuit",
+        value: {
+          pdf: "https://drive.google.com/file/d/1xFJ5YFarIljl1QcOBGlttgZNfVOq102h/preview"
+        }
+      },
+      {
+        title: "com 1",
+        label: "introduction to Em Waves",
+        value: {
+          pdf: "https://drive.google.com/file/d/1wNTRQlZq6RnYl4MkCrl6sJ5zF88gDN5t/preview"
+        }
+      },
+      {
+        title: "com 2",
+        label: "Maxwell's Equations",
+        value: {
+          pdf: "https://drive.google.com/file/d/1Uv-oZMS-o_BmS8Xe3qlMR-ReeKs3-21G/preview"
+        }
+      },
+      {
+        title: "comm 3",
+        label: " uniform plane wave",
+        value: {
+          pdf: "https://drive.google.com/file/d/1leAi2c8Okg7z-ElYcymQwlIIUcg9PLHL/preview"
+        }
+      },
+      {
+        title: "comm 4",
+        label: "Plane Wave in Lossy Mediume",
+        value: {
+          pdf: "https://drive.google.com/file/d/1slTCeUYd-Sg_79zlE--nepdJEAf_fpOx/preview"
+        }}
+      
+    ]
     console.log(Revisions)
     const data = [
       {
@@ -381,6 +435,15 @@
         hasNestedButtons: true,
         value: Revisions
       },
+      {
+        title: "slides",
+        label: " ",
+        hasNestedButtons: true,
+        value: slides
+      },
+
+
+      
     ];
 
     const container = document.querySelector(".content");
