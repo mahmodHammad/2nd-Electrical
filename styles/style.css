@@ -86,13 +86,14 @@ nav ul li:hover {
 .subjects {
   text-align: center;
 background-color:  rgb(230, 246, 255);
+padding: 3vh 6vw;
 
   
 }
 .subject{
   padding: 5vh 2vh;
   background-color: #fff;
-  margin: 10px;
+  margin: 4vh 0;
 }
 .subject a {
   font-size: 25px;
@@ -110,8 +111,8 @@ background-color:  rgb(230, 246, 255);
 .subject-video {
   width: 100%;
   text-align: center;
-  background-color: #eee;
-  /* padding: 30px; */
+  /* border: 3px dashed rgba(218, 240, 240, 0.322); */
+  /* background-color: rgb(245, 252, 253); */
   margin-bottom: 5%;
   padding: 40px 0px;
 }
@@ -172,10 +173,18 @@ background-color:  rgb(230, 246, 255);
   font-weight: bold;
   background-color: #d3e3e9 !important;
 }
-
+.content h3{
+  font-size: 24px;
+  font-family: sans-serif;
+  color: #333;
+}
 @media (max-width: 610px) {
-.nestedBtns button{
-  font-size: 9px;
+  .center ,.content h1 ,.content h3 {
+    font-size: 25px !important;
+    font-weight: 600;
+  }
+  .nestedBtns button{
+  font-size: 10px;
 }
  
   .header h1 span {
@@ -200,6 +209,8 @@ background-color:  rgb(230, 246, 255);
   footer {
     font-size: 11px;
   }
+  
+  
 }
 
 @media (max-width: 730px) {
@@ -229,6 +240,7 @@ background-color:  rgb(230, 246, 255);
 
 footer {
   /* margin-top: 50px; */
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   background-color: #000;
   padding: 20px 0;
 
@@ -240,6 +252,10 @@ footer p {
 }
 .footer {
   display: none;
+}
+footer span {
+  margin: 2px;
+  color: #b30027;
 }
 
 /* ********************************************* */
