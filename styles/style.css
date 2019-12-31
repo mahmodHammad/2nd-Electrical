@@ -94,6 +94,7 @@ padding: 3vh 6vw;
   padding: 5vh 2vh;
   background-color: #fff;
   margin: 4vh 0;
+  border-radius: 9px;
 }
 .subject a {
   font-size: 25px;
@@ -136,6 +137,12 @@ padding: 3vh 6vw;
 .rev .pdf {
   width: 100%;
   height: 99vh;
+  margin-top: 12px;
+}
+
+.scroll{
+  margin: 10px;
+  padding: 10px;
 }
 
 .content {

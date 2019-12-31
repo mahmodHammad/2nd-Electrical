@@ -33,6 +33,7 @@ export default class createIframe {
 
   generatebtn(e) {
     let btn;
+    console.log(e)
     if (e.hasNestedButtons) {
       btn = this.createbtn(
         e.title,
