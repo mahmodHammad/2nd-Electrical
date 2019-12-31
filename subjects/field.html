@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <nav>
+  <nav id="nav">
     <ul>
       <li><a href="../index.html">home</a></li>
       <li>
@@ -26,7 +26,19 @@
     <h1 class="center">Electro Magnetic Fields</h1>
   </div>
 
+  <footer class="footer">
+    <p>
+      made with 	<span>&#10084;</span>  by
+      <b><a href="https://github.com/mahmodHammad">M-Hammad</a></b> 
+    </p>
+    <p>all credit goes to Cam team & Drive Team © 2020</p>
+    <div class="up">
+      <a href="#nav">&uarr;</a>
+    </div>
+  </footer>
+
   <script type="module">
+  
     const Notes = [
       {
         title: "vectors",
@@ -409,7 +421,7 @@
         }}
       
     ]
-    console.log(Revisions)
+
     const data = [
       {
         title: "Lectures",
@@ -440,10 +452,7 @@
         label: " ",
         hasNestedButtons: true,
         value: slides
-      },
-
-
-      
+      }
     ];
 
     const container = document.querySelector(".content");

@@ -1,6 +1,7 @@
 export default class createIframe {
   constructor(data) {
     this.content = document.querySelector(".content");
+    this.footer =document.querySelector(".footer")
     this.data = data;
     this.c = 0;
     this.old = 0;
@@ -33,7 +34,6 @@ export default class createIframe {
 
   generatebtn(e) {
     let btn;
-    console.log(e)
     if (e.hasNestedButtons) {
       btn = this.createbtn(
         e.title,
@@ -146,13 +146,14 @@ export default class createIframe {
 
   render(child) {
     this.renderOnce("c", this.content, "old", child);
+    this.footer.style.display = "block";
+
   }
 
   renderOnce(counter, container, old, child) {
     if (this[counter] === 0) {
       container.appendChild(child);
       this[old] = child;
-      // footer.style.display = "block";
     } else {
       if (child !== this[old]) {
         container.replaceChild(child, this[old]);

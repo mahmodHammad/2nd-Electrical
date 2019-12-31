@@ -215,6 +215,7 @@ padding: 3vh 6vw;
   }
   footer {
     font-size: 11px;
+
   }
   
   
@@ -253,6 +254,7 @@ footer {
 
   color: rgb(220, 245, 255);
   text-align: center;
+bottom: 0;
 }
 footer p {
   margin: 0;
@@ -263,6 +265,20 @@ footer p {
 footer span {
   margin: 2px;
   color: #b30027;
+}
+footer .up a {
+  position: fixed;
+  background-color: rgba(7, 104, 139,0.4);
+  z-index: 10000;
+  bottom: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  color: #fff;
+  font-weight: 900;
+  font-size: 16px;
+
 }
 
 /* ********************************************* */
