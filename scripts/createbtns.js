@@ -117,7 +117,6 @@ export default class createIframe {
   }
 
   rendervideo(video, scope) {
-      console.log(video)
     let videoContainer = document.createElement("div");
     videoContainer.className = "subject-video";
 
@@ -135,11 +134,10 @@ export default class createIframe {
 
     let videoIframe = document.createElement("iframe");
     videoIframe.src = video.src;
-
-    videoIframe.frameborder = "0";
     videoIframe.allow =
       "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture";
-    videoIframe.allowfullscreen = true;
+      videoIframe.setAttribute("allowfullscreen",true)  
+      videoIframe.setAttribute("frameborder","0")  
 
     videoContainer.appendChild(videoIframe);
     scope.appendChild(videoContainer);
