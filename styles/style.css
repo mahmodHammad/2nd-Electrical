@@ -14,7 +14,7 @@ body {
 
 nav {
     background-color: #066286;
-    padding: 4px 0px;
+    padding: 5px 0px;
     margin: 0px;
     width: 100%;
 }
@@ -33,15 +33,16 @@ nav ul {
 nav ul li {
     display: inline-block;
     background-color: rgba(222, 200, 200, 0.05);
-    padding: 10px 6.4%;
-    border-radius: 5px;
+    padding: 7px 5.2%;
+    border-radius: 6px;
+    margin: 0 1%;
 }
 
 nav ul li a {
     color: rgb(233, 238, 247);
     text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
+    font-weight: 600;
+    font-size: 15px;
     text-transform: capitalize;
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
@@ -65,7 +66,7 @@ nav ul li:hover {
 
 .header {
     /* margin-top: 40px; */
-    background: linear-gradient( 0deg, #066286ec, rgb(210, 254, 255), rgb(210, 246, 255), #066286ea);
+    background: linear-gradient( 0deg,  #066286, rgb(230, 246, 255), rgb(230, 246, 255), #066286fb);
     padding: 41vh 0px 41vh 0px;
     width: 100%;
     text-align: center;
@@ -88,8 +89,9 @@ nav ul li:hover {
 }
 
 .header p span {
-    font-size: 1.2rem;
-    color: #025170;
+    font-size: 1.1rem;
+    color: rgb(14, 99, 132);
+    font-weight: 600;
 }
 
 .subjects {
