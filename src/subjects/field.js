@@ -208,8 +208,7 @@ const Revisions = [{
         value: {
             video: {
                 h1: "Final Revisions Records",
-                p:"please click on playlist icon and select video again if it said video is not available",
-                src: "https://www.youtube.com/embed/videoseries?list=PL6ElMp8lKLCB2P1mv8Y_WZO9b4-YaySMq"
+                src: "https://www.youtube.com/embed/videoseries?list=PLK7z7Hx0HInRjAsBy5F1voZ_1N1qp4MsS"
             }
         }
     },
