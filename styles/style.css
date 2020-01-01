@@ -14,7 +14,7 @@ body {
 
 nav {
     background-color: #066286;
-    padding: 5px 0px;
+    padding: 4px 0px;
     margin: 0px;
     width: 100%;
 }
@@ -33,7 +33,7 @@ nav ul {
 nav ul li {
     display: inline-block;
     background-color: rgba(222, 200, 200, 0.05);
-    padding: 7px 5.2%;
+    padding: 5px 6%;
     border-radius: 6px;
     margin: 0 1%;
 }
@@ -102,21 +102,27 @@ nav ul li:hover {
 
 .subject {
     padding: 5vh 2vh;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.74);
     margin: 4vh 0;
     border-radius: 9px;
 }
 
 .subject a {
     font-size: 25px;
-    color: rgb(6, 50, 78) !important;
+    color: rgb(10, 59, 78) !important;
     font-weight: 600;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .subject a:hover {
     text-decoration: none;
+    color: #000 !important;
+
 }
+.subject:hover {
+    background-color: #fff;
+}
+
 
 
 /* frame */
@@ -284,6 +290,7 @@ footer {
 
 footer p {
     margin: 4px;
+    font-size: 15px;
 }
 
 .footer {
