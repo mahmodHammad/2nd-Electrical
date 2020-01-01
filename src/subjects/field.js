@@ -196,13 +196,22 @@ const lecs = [{
     }
 ];
 
-const Revisions = [{
-        title: "Fial P1",
-        label: "Capacitance - Laplace",
+const Revisions = [
+    {
+        title: "Final P1",
+        label: "Capacitance - Laplace  -  biot-savart",
         value: {
             pdf: "https://drive.google.com/file/d/17_vCeryjZov77gsaScB9SnAAwBOlnYld/preview"
         }
-    }, {
+    },
+    {
+        title: "Final P2",
+        label: "Magnetic field part",
+        value: {
+            pdf: "https://drive.google.com/file/d/1mWOEaNGD4jxCG4UsmMNaOak3VdNAKzwv/preview"
+        }
+    },
+     {
         title: "Final Records",
         label: "",
         value: {
