@@ -185,20 +185,20 @@ const Revisions = [{
   value: {
     pdf: "https://drive.google.com/file/d/1mWOEaNGD4jxCG4UsmMNaOak3VdNAKzwv/preview"
   }
-},{
-  title: "Final P3",
-  label: "communication part",
+}
+,{
+  title: "Final P3 ",
+  label: " communication part",
   value: {
-    pdf: "https://drive.google.com/file/d/1iU7iNi_sAPvQ0m1nHiB7-YOXwvxCPk8S/preview"
+    pdf: "https://drive.google.com/file/d/1OTin7HtvnYHMif02HMurktWcMUaINaZi/preview"
   }
 },{
   title: "Final P3 soulutions",
-  label: "Sheets soluton on communication part",
+  label: "Sheet soluton on communication part",
   value: {
-    pdf: "https://drive.google.com/file/d/1OTin7HtvnYHMif02HMurktWcMUaINaZi/preview"
-
-  }
-},{
+    pdf: "https://drive.google.com/file/d/1iU7iNi_sAPvQ0m1nHiB7-YOXwvxCPk8S/preview"
+  }}
+                   ,{
   title: "Final Records",
   label: "",
   value: {
