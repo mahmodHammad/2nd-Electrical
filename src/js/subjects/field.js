@@ -84,9 +84,15 @@ const Notes = [{
   }
 }, {
   title: "lossless",
-  label: "Plane waves (lossless)",
+  label: "Plane waves In (lossless)",
   value: {
     pdf: "https://drive.google.com/file/d/1dJSBMe8_ef8ckzSDr8J9GIn6oEwFm1CG/preview"
+  }
+}, {
+  title: "lossy",
+  label: "Communicatoin part final Revision includes[Plane waves In (lossy Mediums)]",
+  value: {
+    pdf: "https://drive.google.com/file/d/1OTin7HtvnYHMif02HMurktWcMUaINaZi/preview"
   }
 }];
 const lecs = [{
@@ -179,7 +185,20 @@ const Revisions = [{
   value: {
     pdf: "https://drive.google.com/file/d/1mWOEaNGD4jxCG4UsmMNaOak3VdNAKzwv/preview"
   }
-}, {
+},{
+  title: "Final P3",
+  label: "communication part",
+  value: {
+    pdf: "https://drive.google.com/file/d/1iU7iNi_sAPvQ0m1nHiB7-YOXwvxCPk8S/preview"
+  }
+},{
+  title: "Final P3 soulutions",
+  label: "Sheets soluton on communication part",
+  value: {
+    pdf: "https://drive.google.com/file/d/1OTin7HtvnYHMif02HMurktWcMUaINaZi/preview"
+
+  }
+},{
   title: "Final Records",
   label: "",
   value: {
