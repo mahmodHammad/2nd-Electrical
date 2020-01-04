@@ -233,6 +233,7 @@ nav ul li:hover {
         /* padding: 34vh 0px 35vh 0px; */
         background: url('../../images/oo.jpg');
         background-position: center;
+        background-attachment: fixed;
         height: 100%
     }
     .header h1 {
