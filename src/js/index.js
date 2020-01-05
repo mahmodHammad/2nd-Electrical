@@ -9,7 +9,7 @@ export default class createIframe {
     this.oldbtn = 0;
   }
 
-  renderbtn(givenData,  isNested,container = this.content) {
+  renderbtn(givenData, container = this.content, isNested) {
     let btns = document.createElement("div");
     btns.className = "btns";
     container.appendChild(btns);

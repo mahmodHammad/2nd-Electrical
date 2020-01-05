@@ -1,0 +1,4 @@
+linear-gradient( 180deg,  #37a3ce,  #32a4ae,#34b9b8,#33b0b3, #37a3ce)
+
+
+linear-gradient( 180deg,  #066286,  #47afc1,rgb(168, 220, 228) ,rgb(145, 209, 219),#39a8b2, #066286)

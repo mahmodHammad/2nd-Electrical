@@ -1,14 +1,16 @@
-// const container = document.querySelector(".content");
-import creater from "../index.js";
-import data from './field'
+// // const container = document.querySelector(".content");
+// import creater from "../index.js";
+// import alldata from './field.js'
 
-const inst = new creater();
-inst.renderbtn(data, container, false);
+// const data = alldata()
 
-window.dataLayer = window.dataLayer || [];
-function gtag() {
-  dataLayer.push(arguments);
-}
+// const inst = new creater();
+// inst.renderbtn(data, false);
 
-gtag('js', new Date());
-gtag('config', 'UA-155223882-1');
+// window.dataLayer = window.dataLayer || [];
+// function gtag() {
+//   dataLayer.push(arguments);
+// }
+
+// gtag('js', new Date());
+// gtag('config', 'UA-155223882-1');
