@@ -1,4 +1,5 @@
 {[{
+<<<<<<< HEAD
   "title": "Lectures",
   "label": "",
   "hasNestedButtons": true,
@@ -8,6 +9,17 @@
     "value": {
       "pdf": "https://drive.google.com/file/d/1VaK8igazScz2G3YBE0VLQYi4_2sowXA5/preview",
       "rec": "https://drive.google.com/file/d/18jy6breYuhjFw7OYJNnMwqKJMQrgF1Bv/preview"
+=======
+  title: "fieldLectures",
+  label: "",
+  hasNestedButtons: true,
+  value:  [{
+    title: "lec1 E",
+    label: "vectors",
+    value: {
+      pdf: "https://drive.google.com/file/d/1VaK8igazScz2G3YBE0VLQYi4_2sowXA5/preview",
+      rec: "https://drive.google.com/file/d/18jy6breYuhjFw7OYJNnMwqKJMQrgF1Bv/preview"
+>>>>>>> a2fe70f2f78185d3949b1a376f00f0b9b0502863
     }
   }, {
     "title": "lec2 E",
