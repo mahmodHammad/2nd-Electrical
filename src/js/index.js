@@ -143,5 +143,4 @@ export default class createIframe {
 
     this[counter]++;
   }
-
 }
