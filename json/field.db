@@ -1,4 +1,4 @@
-const data = [{
+{[{
   title: "Lectures",
   label: "",
   hasNestedButtons: true,
@@ -319,7 +319,5 @@ const data = [{
       pdf: "https://drive.google.com/file/d/1slTCeUYd-Sg_79zlE--nepdJEAf_fpOx/preview"
     }
 }]
-}];
-export default function getdata(){
-  return data
+}]
 }
