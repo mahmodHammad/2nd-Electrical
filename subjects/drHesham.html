@@ -55,22 +55,21 @@ const inst = new creater();
 const jsonUrl="https://my-json-server.typicode.com/mahmodhammad/electronics/data"
 fetch(jsonUrl).then((e)=>e.json()) .then(data=>{
   document.getElementById("loading").style.display="none"
-    
   inst.renderbtn(data)
 })
 
 </script>    
   </script>
-  <!-- <script
+ <script
     async
     src="https://www.googletagmanager.com/gtag/js?id=UA-155223882-1"
-  ></script> -->
-  <!-- <script>
+  ></script> 
+ <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() {
       dataLayer.push(arguments);
     }
     gtag("js", new Date());
     gtag("config", "UA-155223882-1");
-  </script> -->
+  </script> 
 </html>
