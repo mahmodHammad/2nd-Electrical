@@ -79,7 +79,6 @@ export default class createIframe {
 
     return btn;
   }
-  
 
   // take src ,container then create an ifreame
   createIframe(label, recsrc, pdfsrc, video, container) {
@@ -100,7 +99,7 @@ export default class createIframe {
     return scope;
   }
 
-renderRecord(recsrc, scope) {
+  renderRecord(recsrc, scope) {
     let rec = document.createElement("iframe");
     rec.src = recsrc;
     rec.className = "record";
@@ -114,6 +113,7 @@ renderRecord(recsrc, scope) {
     scroll.innerHTML = "scroll  pdf";
 
     const src = pdfsrc.split("/")[5];
+
     const displayPdf = `https://drive.google.com/file/d/${src}/preview`;
     const downloadPdf = `https://drive.google.com/uc?authuser=0&id=${src}&export=download`;
 
@@ -133,25 +133,20 @@ renderRecord(recsrc, scope) {
   }
 
   rendervideo(video, scope) {
-    const rec = video.rec
-    const videoID =rec.split("=")[1] 
-//change this later XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-    let isplaylist =1  
-    let videoSrc ="";
-    if(isplaylist){
-      // playlist
-       videoSrc=`https://www.youtube.com/embed/videoseries?list=${videoID}`
-    }
-    else {
-      videoSrc=`https://www.youtube.com/embed/${videoID}`
-    }
+    const rec = video.rec;
+    const videoID = rec.split("=")[1];
+    //change this later XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
-// https://www.youtube.com/playlist?list=PLkOpA9uAb9H25y_JZzGYel9_7IEbeoEY2
-// https://www.youtube.com/embed/videoseries?list=PLkOpA9uAb9H25y_JZzGYel9_7IEbeoEY2
-  
-// https://www.youtube.com/embed/
-// https://www.youtube.com/watch?v=
+    let videoSrc = "";
+    if (video.rec.includes("playlist"))
+      videoSrc = `https://www.youtube.com/embed/videoseries?list=${videoID}`;
+    else videoSrc = `https://www.youtube.com/embed/${videoID}`;
 
+    // https://www.youtube.com/playlist?list=PLkOpA9uAb9H25y_JZzGYel9_7IEbeoEY2
+    // https://www.youtube.com/embed/videoseries?list=PLkOpA9uAb9H25y_JZzGYel9_7IEbeoEY2
+
+    // https://www.youtube.com/embed/
+    // https://www.youtube.com/watch?v=
 
     let videoContainer = document.createElement("div");
     videoContainer.className = "subject-video";
