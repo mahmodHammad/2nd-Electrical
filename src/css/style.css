@@ -142,8 +142,8 @@ nav ul li a:hover {
 .subjects .right,
 .subjects .left {
   font-size: 21px;
-  color: #066286 !important;
-  border: 0.5px dashed rgb(10, 59, 78);
+  color: #045677 !important;
+  border: 1px dotted rgb(19, 92, 121);
   padding: 4px 18px;
   border-radius: 5px;
   background-color: rgb(230, 246, 255);
