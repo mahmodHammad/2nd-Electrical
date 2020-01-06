@@ -142,12 +142,6 @@ export default class createIframe {
       videoSrc = `https://www.youtube.com/embed/videoseries?list=${videoID}`;
     else videoSrc = `https://www.youtube.com/embed/${videoID}`;
 
-    // https://www.youtube.com/playlist?list=PLkOpA9uAb9H25y_JZzGYel9_7IEbeoEY2
-    // https://www.youtube.com/embed/videoseries?list=PLkOpA9uAb9H25y_JZzGYel9_7IEbeoEY2
-
-    // https://www.youtube.com/embed/
-    // https://www.youtube.com/watch?v=
-
     let videoContainer = document.createElement("div");
     videoContainer.className = "subject-video";
 
