@@ -47,9 +47,8 @@ import creater from "../src/js/index.js";
 // import alldata from './field.js'
 const inst = new creater();
 
-const jsonUrl="https://my-json-server.typicode.com/mahmodhammad/electronics/data"
+const jsonUrl="https://my-json-server.typicode.com/mahmodHammad/wagdy/data"
 fetch(jsonUrl).then((e)=>e.json()) .then(data=>{
-    console.log(data)
     inst.renderbtn(data)
 })
 

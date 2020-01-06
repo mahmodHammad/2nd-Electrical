@@ -49,16 +49,12 @@
       <p>all credits goes to Cam-team & Drive-Team<span>&#10084;</span> © 2020</p>
     </footer>
 
-    <!-- <script type="module" src="../src/js/subjects/field.js"></script> -->
   </body>
 <script type="module">
 import creater from "../src/js/index.js";
-// import alldata from './field.js'
 const inst = new creater();
-
 const jsonUrl="https://my-json-server.typicode.com/mahmodhammad/electronics/data"
 fetch(jsonUrl).then((e)=>e.json()) .then(data=>{
-    console.log(data)
     inst.renderbtn(data)
 })
 
