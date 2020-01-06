@@ -3,8 +3,8 @@ import creater from "../index.js";
 // import alldata from './field.js'
 const inst = new creater();
 
-// const data = 
-fetch("https://gist.githubusercontent.com/mahmodHammad/d53d3aead5f6200beb9d9442fefe982c/raw/7fc444d9da26885335dbea4d1da708bad5cca796/data").then((e)=>e.json()) .then(data=>{
+const jsonUrl="https://gist.githubusercontent.com/mahmodHammad/d53d3aead5f6200beb9d9442fefe982c/raw/b11251d2ac593e763a88aecc476b4f1145fbc2da/data"
+fetch(jsonUrl).then((e)=>e.json()) .then(data=>{
     console.log(data)
     inst.renderbtn(data.data)
 })
