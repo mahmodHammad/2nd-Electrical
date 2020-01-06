@@ -269,6 +269,30 @@ nav ul li a:hover {
   width: 3%;
 }
 
+
+.formula{
+  text-align: center !important;
+}
+.formula img{  
+display: none;
+}
+.togglesheet{
+display: block !important;
+width: 99vw;
+text-align: center;
+}
+.formula button {
+margin: 10px;
+background-color:rgb(0, 53, 139);
+border: 1px solid darkcyan;
+padding: 5px 17px;
+border-radius: 20px;
+color: aliceblue;
+}
+.formula button:hover{
+cursor: pointer;
+}
+
 @media (max-width: 720px) {
   .subjects .right,
 .subjects .left {
