@@ -100,8 +100,12 @@ export default class createIframe {
   }
 
   renderRecord(recsrc, scope) {
+    
+    const srcID = recsrc.split("/")[5];
+    const displayrec = `https://drive.google.com/file/d/${srcID}/preview`;
+   
     let rec = document.createElement("iframe");
-    rec.src = recsrc;
+    rec.src = displayrec;
     rec.className = "record";
     scope.appendChild(rec);
   }
