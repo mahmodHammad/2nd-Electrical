@@ -259,11 +259,11 @@ nav ul li a:hover {
 
 .down{
   position: relative;
-  top: 70%;
+  top: 68%;
 }
 
 .down a img{
-  width: 4%;
+  width: 3%;
 }
 
 @media (max-width: 720px) {
@@ -274,7 +274,7 @@ nav ul li a:hover {
 }
   .down{
     position: relative;
-    top: 60%;
+    top: 55%;
   }
   .header .h {
     /* position: relative; */
