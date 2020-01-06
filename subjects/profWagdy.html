@@ -30,25 +30,31 @@
 
     <div class="content">
       <h1 class="center">electronics Dr-wagdy part</h1>
+      <div class="loading" id="loading">
+        <img 
+        src="../src/assets/Infinity.svg" 
+        alt="triangle with all three sides equal" />
+      </div>
     </div>
 
     <div class="up">
-      <a href="#nav">&uarr;</a>
+      <a href="#nav">
+        <img src="../src/assets/up.svg" alt="up">
+      </a>
     </div>
   
     <footer class="footer">
       <p>all credits goes to Cam-team & Drive-Team<span>&#10084;</span> © 2020</p>
     </footer>
 
-    <!-- <script type="module" src="../src/js/subjects/field.js"></script> -->
   </body>
 <script type="module">
 import creater from "../src/js/index.js";
-// import alldata from './field.js'
 const inst = new creater();
 
 const jsonUrl="https://my-json-server.typicode.com/mahmodHammad/wagdy/data"
 fetch(jsonUrl).then((e)=>e.json()) .then(data=>{
+  document.getElementById("loading").style.display="none"
     inst.renderbtn(data)
 })
 

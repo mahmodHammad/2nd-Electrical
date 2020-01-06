@@ -31,28 +31,34 @@ nav ul {
 
 nav ul li {
   display: inline-block;
+
+  /* display: inline-block;
   background-color: rgba(222, 200, 200, 0.05);
   padding: 5px 6%;
   border-radius: 6px;
-  margin: 0 1%;
+  margin: 0 1%; */
 }
 
 nav ul li a {
+  display: inline-block;
+
+  background-color: rgba(222, 200, 200, 0.05);
+  padding: 0.4vh 4vw;
+  border-radius: 6px;
+  margin: 0 1.5vw;
+
   color: rgb(233, 238, 247);
   text-decoration: none;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 13px;
   text-transform: capitalize;
   font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
 }
 
-nav ul li :hover {
+nav ul li a:hover {
   text-decoration: none;
   color: #fff;
-}
-
-nav ul li:hover {
   text-decoration: none;
   background-color: rgba(222, 200, 200, 0.55);
 }
@@ -62,6 +68,7 @@ nav ul li:hover {
 /* header*************************************/
 
 .header {
+  height: 96.5vh !important;
   /* margin-top: 40px; */
   background: linear-gradient(
     0deg,
@@ -70,12 +77,15 @@ nav ul li:hover {
     rgb(230, 246, 255),
     #066286fb
   );
-  padding: 41vh 0px 41vh 0px;
+  /* padding: 41vh 0px 41vh 0px; */
   width: 100%;
   text-align: center;
   font-family: Tahoma, sans-serif;
 }
-
+.header .h {
+  position: relative;
+  top: 42%;
+}
 .header h1 {
   text-transform: uppercase;
   font-size: 2.6rem;
@@ -138,17 +148,16 @@ nav ul li:hover {
 }
 .subjects .right,
 .subjects .left {
-    font-size: 21px;
+  font-size: 21px;
   color: #066286 !important;
   border: 1px dashed rgb(10, 59, 78);
   padding: 3px 16px;
   border-radius: 5px;
 }
-.subjects  .title {
-    margin-bottom: 15px;
-    /* color: red !important; */
-
-  }
+.subjects .title {
+  margin-bottom: 15px;
+  /* color: red !important; */
+}
 .subjects .right:hover,
 .subjects .left:hover {
   background-color: #066286;
@@ -192,6 +201,10 @@ nav ul li:hover {
 .scroll {
   margin: 10px;
   padding: 10px;
+  color: gold;
+}
+.Download{
+  color: #b30027;
 }
 
 .content {
@@ -218,11 +231,11 @@ nav ul li:hover {
 .btn {
   text-transform: capitalize;
   color: #055482;
-  margin: 12px 2.3%;
+  margin: 12px 1%;
   border: none;
-  padding: 10px 25px;
-  border-radius: 6px;
-  font-size: 19px;
+  padding: 7px 20px;
+  border-radius: 5px;
+  font-size: 16px;
   font-weight: bold;
   background-color: #d3e3e9 !important;
 }
@@ -232,8 +245,41 @@ nav ul li:hover {
   font-family: sans-serif;
   color: #333;
 }
+.loading {
+  text-align: center;
+  /* font-size: 50px; */
+}
+.loading img{
+  width: 20%;
+  height: 20%;
+}
+
+.down{
+  position: relative;
+  top: 70%;
+}
+
+.down a img{
+  width: 4%;
+}
 
 @media (max-width: 720px) {
+  .subjects .right,
+.subjects .left {
+  font-size: 10px !important;
+ 
+}
+  .down{
+    position: relative;
+    top: 60%;
+  }
+  .header .h {
+    /* position: relative; */
+    top: 38%;
+  }
+  .scroll,.Download{
+    font-size: 11px;
+  } 
   .center,
   .content h1,
   .content h3 {
@@ -260,30 +306,31 @@ nav ul li:hover {
     height: 58vw;
   }
   .header {
+    height: 95.5vh !important;
+
     /* padding: 34vh 0px 35vh 0px; */
-    background: url("../../images/oo.jpg");
+    /* background: url("../../images/oo.jpg");
     background-position: center;
     background-attachment: fixed;
-    height: 100%;
   }
   .header h1 {
-    display: none;
+    /* display: none; */
     text-transform: uppercase;
     font-size: 2.2rem;
   }
   .header p {
-    display: none;
+    /* display: none; */
     font-size: 1.2rem;
   }
   .header p span {
-    display: none;
+    /* display: none; */
     font-size: 0.8rem;
   }
   footer {
-    font-size: 10px;
+    font-size: 9px;
   }
   footer p {
-    margin: 10px;
+    margin: 8px;
   }
   .subjects a {
     font-size: 1.2rem;
@@ -293,20 +340,21 @@ nav ul li:hover {
   .subjects .left {
     font-size: 12px;
   }
-}
 
+  .down a img {
+    width: 7%;
+  }
+}
+/* 
 @media (max-width: 730px) {
   @media (min-width: 610px) {
-    .header {
-      padding: 43vh 0px 42vh 0px !important;
-    }
     .btn {
       font-size: 11px;
       padding: 1.6vw 2vw;
       margin: 12px 1%;
     }
   }
-}
+} */
 
 .btn:hover {
   cursor: pointer;
@@ -330,7 +378,7 @@ footer {
 }
 
 footer p {
-  margin: 4px;
+  margin: 3px;
 }
 
 .footer {
@@ -343,22 +391,21 @@ footer span {
 }
 
 .up {
-  padding: 3px;
-  text-align: center;
+  
+  /* padding: 3px;
+  text-align: center; */
 }
 
-.up a {
+ .up a {
   position: fixed;
-  background-color: rgba(7, 104, 139, 0.4);
-  z-index: 10000;
-  bottom: 5px;
+  background-color: rgba(7, 104, 139, 0.2);
+  bottom: 10px;
   left: 5px;
   width: 20px;
   height: 20px;
   border-radius: 100px;
   color: #fff;
   font-weight: 900;
-  font-size: 18px;
 }
 
 /* ********************************************* */

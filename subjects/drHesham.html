@@ -28,21 +28,20 @@
       </ul>
     </nav>
 
-
-
-
-
     <div class="content">
       <h1 class="center">Electronics Dr-hesham part</h1>
+      <div class="loading" id="loading">
+        <img 
+        src="../src/assets/Infinity.svg" 
+        alt="triangle with all three sides equal" />
+      </div>
     </div>
 
-
-
-
-
-
+  
     <div class="up">
-      <a href="#nav">&uarr;</a>
+      <a href="#nav">
+        <img src="../src/assets/up.svg" alt="up">
+      </a>
     </div>
   
     <footer class="footer">
@@ -55,7 +54,9 @@ import creater from "../src/js/index.js";
 const inst = new creater();
 const jsonUrl="https://my-json-server.typicode.com/mahmodhammad/electronics/data"
 fetch(jsonUrl).then((e)=>e.json()) .then(data=>{
-    inst.renderbtn(data)
+  document.getElementById("loading").style.display="none"
+    
+  inst.renderbtn(data)
 })
 
 </script>    
