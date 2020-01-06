@@ -43,8 +43,8 @@ nav ul li a {
   display: inline-block;
 
   background-color: rgba(222, 200, 200, 0.05);
-  padding: 0.4vh 4vw;
-  border-radius: 6px;
+  padding: 0.5vh 5vw;
+  border-radius: 4px;
   margin: 0 1.5vw;
 
   color: rgb(233, 238, 247);
@@ -139,12 +139,12 @@ nav ul li a:hover {
 
 .subjects .left {
   /* display: block; */
-  margin: 10px 7vw 0 0;
+  margin: 10px 6vw 0 0;
 }
 
 .subjects .right {
   /* display: block; */
-  margin: 20px 0 0 7vw;
+  margin: 20px 0 0 6vw;
 }
 .subjects .right,
 .subjects .left {
@@ -201,12 +201,22 @@ nav ul li a:hover {
 .scroll {
   margin: 10px;
   padding: 10px;
-  color: gold;
+  color: #006bb3;
 }
 .Download{
-  color: #b30027;
-}
 
+  margin: 10px;
+  padding: 10px;
+  /* color: gold; */
+  color: rgb(0, 128, 90);
+}
+.Download ,.scroll{
+  font-size: 14px;
+  
+}
+.Download:hover , .scroll:hover{
+  text-decoration: none;
+}
 .content {
   padding: 2% 0;
 }
@@ -316,7 +326,7 @@ nav ul li a:hover {
   .header h1 {
     /* display: none; */
     text-transform: uppercase;
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
   .header p {
     /* display: none; */
@@ -389,13 +399,6 @@ footer span {
   margin: 2px;
   color: #b30027;
 }
-
-.up {
-  
-  /* padding: 3px;
-  text-align: center; */
-}
-
  .up a {
   position: fixed;
   background-color: rgba(7, 104, 139, 0.2);

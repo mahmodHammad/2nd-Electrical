@@ -114,7 +114,7 @@ export default class createIframe {
     let scroll = document.createElement("a");
     scroll.className = "scroll";
     scroll.href = "#doc";
-    scroll.innerHTML = "scroll  pdf";
+    scroll.innerHTML = "scroll to pdf";
 
     const src = pdfsrc.split("/")[5];
 
