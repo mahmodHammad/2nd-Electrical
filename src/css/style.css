@@ -143,9 +143,12 @@ nav ul li a:hover {
 .subjects .left {
   font-size: 21px;
   color: #066286 !important;
-  border: 1px dashed rgb(10, 59, 78);
-  padding: 3px 16px;
+  border: 0.5px dashed rgb(10, 59, 78);
+  padding: 4px 18px;
   border-radius: 5px;
+  background-color: rgb(230, 246, 255);
+
+
 }
 .subjects .title {
   margin-bottom: 15px;
@@ -270,6 +273,7 @@ nav ul li a:hover {
   .subjects .right,
 .subjects .left {
   font-size: 10px !important;
+
  
 }
   .down{
