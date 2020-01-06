@@ -33,7 +33,7 @@
 
 
     <div class="content">
-      <h1 class="center">Electro Magnetic Fields</h1>
+      <h1 class="center">Electronics Dr-hesham part</h1>
     </div>
 
 
@@ -56,10 +56,10 @@ import creater from "../src/js/index.js";
 // import alldata from './field.js'
 const inst = new creater();
 
-const jsonUrl="https://gist.githubusercontent.com/mahmodHammad/d53d3aead5f6200beb9d9442fefe982c/raw/b11251d2ac593e763a88aecc476b4f1145fbc2da/data"
+const jsonUrl="https://my-json-server.typicode.com/mahmodhammad/electronics/data"
 fetch(jsonUrl).then((e)=>e.json()) .then(data=>{
-    // console.log(data)
-    inst.renderbtn(data.data)
+    console.log(data)
+    inst.renderbtn(data)
 })
 
 </script>    
