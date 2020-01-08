@@ -9,7 +9,6 @@ function createOptions() {
   ioption.text = '';
   select.appendChild(ioption);
 
-
   for (let i = 0; i < 114; i++) {
     const option = document.createElement("option");
     option.value = 126417 - i;
@@ -30,6 +29,7 @@ function renderQuran(recsrc, scope, suraID) {
 
   let rec = document.createElement("iframe");
   rec.src = displayrec;
+  rec.SameSite='None'
   rec.className = "player";
   rec.setAttribute("frameborder", "0");
   renderOnce(scope, rec);
