@@ -43,17 +43,14 @@
         </p>
       </div>
 
-      
       <div class="down bounce" id="down">
         <a href="#subjects">
-          <img
-            src="./src/assets/down.svg"
-          />
+          <img src="./src/assets/down.svg" />
         </a>
       </div>
-  
     </div>
-      <div class="subjects" id="subjects">
+
+    <div class="subjects" id="subjects">
       <div class="subject">
         <a href="./subjects/field.html">Electro Magnetic Fields</a>
       </div>
@@ -76,9 +73,13 @@
     <footer>
       <p>
         made with <span>&#10084;</span> by
-        <b><a href="https://github.com/mahmodHammad/2nd-Electrical">M-Hammad</a></b>
+        <b
+          ><a href="https://github.com/mahmodHammad/2nd-Electrical"
+            >M-Hammad</a
+          ></b
+        >
       </p>
-      <p>all creadits goes to  Cam-team & Drive-Team © 2020</p>
+      <p>all creadits goes to Cam-team & Drive-Team © 2020</p>
     </footer>
   </body>
 
@@ -100,7 +101,6 @@
   </script>
 
   <script>
-
     if ("serviceWorker" in navigator) {
       window.addEventListener("load", () => {
         navigator.serviceWorker.register("./sw.js");
@@ -109,59 +109,70 @@
   </script>
 
   <style>
-  
-  .bounce {
-	-moz-animation: bounce 3s infinite;
-	-webkit-animation: bounce 3s infinite;
-	animation: bounce 3s infinite;
-}
-@-moz-keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    -moz-transform: translateY(0);
-    transform: translateY(0);
-  }
-  40% {
-    -moz-transform: translateY(-3vh);
-    transform: translateY(-3vh);
-  }
-  60% {
-    -moz-transform: translateY(-1.5vh);
-    transform: translateY(-1.5vh);
-  }
-}
-@-webkit-keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  40% {
-    -webkit-transform: translateY(-3vh);
-    transform: translateY(-3vh);
-  }
-  60% {
-    -webkit-transform: translateY(-1.5vh);
-    transform: translateY(-1.5vh);
-  }
-}
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  40% {
-    -moz-transform: translateY(-3vh);
-    -ms-transform: translateY(-3vh);
-    -webkit-transform: translateY(-3vh);
-    transform: translateY(-3vh);
-  }
-  60% {
-    -moz-transform: translateY(-1.5vh);
-    -ms-transform: translateY(-1.5vh);
-    -webkit-transform: translateY(-1.5vh);
-    transform: translateY(-1.5vh);
-  }
-}
+    .bounce {
+      -moz-animation: bounce 3s infinite;
+      -webkit-animation: bounce 3s infinite;
+      animation: bounce 3s infinite;
+    }
+    @-moz-keyframes bounce {
+      0%,
+      20%,
+      50%,
+      80%,
+      100% {
+        -moz-transform: translateY(0);
+        transform: translateY(0);
+      }
+      40% {
+        -moz-transform: translateY(-3vh);
+        transform: translateY(-3vh);
+      }
+      60% {
+        -moz-transform: translateY(-1.5vh);
+        transform: translateY(-1.5vh);
+      }
+    }
+    @-webkit-keyframes bounce {
+      0%,
+      20%,
+      50%,
+      80%,
+      100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+      }
+      40% {
+        -webkit-transform: translateY(-3vh);
+        transform: translateY(-3vh);
+      }
+      60% {
+        -webkit-transform: translateY(-1.5vh);
+        transform: translateY(-1.5vh);
+      }
+    }
+    @keyframes bounce {
+      0%,
+      20%,
+      50%,
+      80%,
+      100% {
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+      }
+      40% {
+        -moz-transform: translateY(-3vh);
+        -ms-transform: translateY(-3vh);
+        -webkit-transform: translateY(-3vh);
+        transform: translateY(-3vh);
+      }
+      60% {
+        -moz-transform: translateY(-1.5vh);
+        -ms-transform: translateY(-1.5vh);
+        -webkit-transform: translateY(-1.5vh);
+        transform: translateY(-1.5vh);
+      }
+    }
   </style>
 </html>

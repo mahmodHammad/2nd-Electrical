@@ -293,6 +293,17 @@ color: aliceblue;
 cursor: pointer;
 }
 
+.quran {
+  text-align: center;
+  height: 0;
+  margin: 10px;
+}
+.quran .player {
+  width: 60vw;
+  height: 40px;
+  opacity: 0.5;
+}
+
 @media (max-width: 720px) {
   .subjects .right,
 .subjects .left {

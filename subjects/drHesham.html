@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Electronics</title>
+    <title>electronics</title>
     <link rel="stylesheet" href="../src/css/style.css" />
     <link rel="shortcut icon" href="">
     <link rel="icon" href="../src/assets/icon.png" type="image/icon type" />
@@ -29,7 +29,7 @@
         </li>
       </ul>
     </nav>
-
+   
     <div class="content">
       <h1 class="center">Electronics Dr-hesham part</h1>
       <div class="loading" id="loading">
@@ -53,7 +53,14 @@
       <img id="fsheet" src="../src/assets/formulas2019.png"/>
     </div>
 
-
+    <div class="quran" id="quran">
+      <!-- <iframe
+        class="player"
+        src="https://qurancentral.com/?powerpress_embed=126406-podcast&amp;powerpress_player=mediaelement-audio"
+        frameborder="0"
+        scrolling="no"
+      ></iframe> -->
+    </div>
 
     <footer class="footer">
       <p>all credits goes to Cam-team & Drive-Team<span>&#10084;</span> © 2020</p>
@@ -74,9 +81,12 @@ fetch(jsonUrl).then((e)=>e.json()) .then(data=>{
   document.getElementById("loading").style.display="none"
   inst.renderbtn(data)
 })
+const quranid=document.getElementById('quran')
+inst.renderQuran("https://qurancentral.com/?powerpress_embed=126416-podcast&amp;powerpress_player=mediaelement-audio", quranid ,126416)
 
 </script>    
   </script>
+  <!-- <script src="../src/js/quran.js"></script> -->
  <script
     async
     src="https://www.googletagmanager.com/gtag/js?id=UA-155223882-1"

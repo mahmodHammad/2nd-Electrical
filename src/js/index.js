@@ -100,15 +100,46 @@ export default class createIframe {
   }
 
   renderRecord(recsrc, scope) {
+  
+      const srcID = recsrc.split("/")[5];
+      const  displayrec = `https://drive.google.com/file/d/${srcID}/preview`;
+      let rec = document.createElement("iframe");
+      rec.src = displayrec;
+      rec.className = "record";
+      scope.appendChild(rec);
+    }
+        //  
+      
+    //   <iframe
+    //   class="player"
+    //   src="https://qurancentral.com/?powerpress_embed=126406-podcast&amp;powerpress_player=mediaelement-audio"
+    //   frameborder="0"
+    //   scrolling="no"
+    // ></iframe>
     
-    const srcID = recsrc.split("/")[5];
-    const displayrec = `https://drive.google.com/file/d/${srcID}/preview`;
-   
-    let rec = document.createElement("iframe");
-    rec.src = displayrec;
-    rec.className = "record";
-    scope.appendChild(rec);
+  
+  renderQuran(recsrc ,scope ,suraID){
+    const srcID =recsrc.split("=")
+    
+    const url1 = srcID[0]
+    const url2 = srcID[1].substr(6)
+    const value=`=${suraID}`
+    const displayrec =url1+value+url2
+
+     let rec = document.createElement("iframe");
+     rec.src = displayrec;
+     rec.className = "player";
+     scope.appendChild(rec);
+     console.log(scope)
+     console.log(rec)
+
+    console.log(displayrec)
+    console.log(url1)
+    console.log(url2)
+    console.log("value",value)
+    
   }
+
 
   renderpdf(pdfsrc, scope) {
     let scroll = document.createElement("a");
@@ -147,13 +178,6 @@ export default class createIframe {
     if (!isNotPlayList)
       videoSrc = `https://www.youtube.com/embed/videoseries?list=${videoID}`;
     else videoSrc = `https://www.youtube.com/embed/${videoID}`;
-
-    console.log(isNotPlayList,videoSrc)
-    // https://www.youtube.com/playlist?list=PLkOpA9uAb9H25y_JZzGYel9_7IEbeoEY2
-    // https://www.youtube.com/embed/videoseries?list=PLkOpA9uAb9H25y_JZzGYel9_7IEbeoEY2
-
-    // https://www.youtube.com/embed/
-    // https://www.youtube.com/watch?v=
 
     let videoContainer = document.createElement("div");
     videoContainer.className = "subject-video";
