@@ -81,12 +81,10 @@ fetch(jsonUrl).then((e)=>e.json()) .then(data=>{
   document.getElementById("loading").style.display="none"
   inst.renderbtn(data)
 })
-const quranid=document.getElementById('quran')
-inst.renderQuran("https://qurancentral.com/?powerpress_embed=126416-podcast&amp;powerpress_player=mediaelement-audio", quranid ,126416)
-
 </script>    
-  </script>
-  <!-- <script src="../src/js/quran.js"></script> -->
+<script src="../src/js/quran.js"></script> 
+
+</script>
  <script
     async
     src="https://www.googletagmanager.com/gtag/js?id=UA-155223882-1"

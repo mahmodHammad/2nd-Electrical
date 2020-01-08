@@ -117,28 +117,7 @@ export default class createIframe {
     //   scrolling="no"
     // ></iframe>
     
-  
-  renderQuran(recsrc ,scope ,suraID){
-    const srcID =recsrc.split("=")
-    
-    const url1 = srcID[0]
-    const url2 = srcID[1].substr(6)
-    const value=`=${suraID}`
-    const displayrec =url1+value+url2
 
-     let rec = document.createElement("iframe");
-     rec.src = displayrec;
-     rec.className = "player";
-     scope.appendChild(rec);
-     console.log(scope)
-     console.log(rec)
-
-    console.log(displayrec)
-    console.log(url1)
-    console.log(url2)
-    console.log("value",value)
-    
-  }
 
 
   renderpdf(pdfsrc, scope) {
@@ -221,7 +200,6 @@ export default class createIframe {
         this[old] = child;
       }
     }
-
     this[counter]++;
   }
 }

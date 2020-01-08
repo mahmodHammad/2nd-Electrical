@@ -295,15 +295,26 @@ cursor: pointer;
 
 .quran {
   text-align: center;
-  height: 0;
-  margin: 10px;
+  /* height: 0; */
+  margin: 6px;
 }
 .quran .player {
   width: 60vw;
   height: 40px;
-  opacity: 0.5;
+  opacity: 0.7;
+  display: block;
+  margin: 7px auto;
 }
-
+.quran .quranList {
+  margin: auto;
+  display: block;
+  width: 55px;
+  background-color: #333;
+  border: none;
+  border-radius: 3px;
+  padding: 3px 5px;
+  color: whitesmoke;
+}
 @media (max-width: 720px) {
   .subjects .right,
 .subjects .left {
