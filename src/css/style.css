@@ -296,7 +296,7 @@ cursor: pointer;
 .quran {
   text-align: center;
   /* height: 0; */
-  margin: 6px;
+  margin: 10px;
 }
 .quran .player {
   width: 60vw;
@@ -305,9 +305,14 @@ cursor: pointer;
   display: block;
   margin: 7px auto;
 }
-.quran .quranList {
+.quran .select-container {
   margin: auto;
   display: block;
+}
+.quran .select-container span{
+  margin: 5px;
+}
+.quran .quranList {
   width: 55px;
   background-color: #333;
   border: none;

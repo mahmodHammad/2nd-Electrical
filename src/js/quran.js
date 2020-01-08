@@ -4,10 +4,16 @@ const quranurl =
 
 function createOptions() {
   const select = document.createElement("select");
+  const ioption = document.createElement("option");
+  ioption.value = 0;
+  ioption.text = '';
+  select.appendChild(ioption);
+
+
   for (let i = 0; i < 114; i++) {
     const option = document.createElement("option");
     option.value = 126417 - i;
-    option.text = i;
+    option.text = i+1;
     select.appendChild(option);
   }
   select.className = "quranList";
@@ -31,7 +37,16 @@ function renderQuran(recsrc, scope, suraID) {
 }
 
 const selects = createOptions();
-quranid.appendChild(selects);
+const label = document.createElement('span')
+label.innerText="Select sūrah"
+label.className="label"
+selects.appendChild(label)
+
+const selectContainer = document.createElement('div')
+selectContainer.className="select-container"
+selectContainer.appendChild(label)
+selectContainer.appendChild(selects)
+quranid.appendChild(selectContainer);
 
 selects.addEventListener("change", event => {
   renderQuran(quranurl, quranid, event.target.value);
