@@ -520,3 +520,32 @@ p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
+
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #444; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:#333; 
+}
+::-webkit-scrollbar-track-piece{
+  width: 40px;
+  background-color:#eee;
+
+}
+
+::-webkit-scrollbar-button{
+  background-color: rgb(0, 0, 0);
+}
