@@ -1,3 +1,8 @@
+
+
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   width: 100%;
@@ -387,7 +392,7 @@ cursor: pointer;
     font-size: 0.8rem;
   }
   footer {
-    font-size: 9px;
+    font-size: 8px;
   }
   footer p {
     margin: 8px;
@@ -523,7 +528,7 @@ p {
 
 
 ::-webkit-scrollbar {
-  width: 3px;
+  width: 5px;
 }
 
 /* Track */
@@ -533,7 +538,7 @@ p {
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #444; 
+  background: #066286; 
 }
 
 /* Handle on hover */
@@ -544,8 +549,4 @@ p {
   width: 40px;
   background-color:#eee;
 
-}
-
-::-webkit-scrollbar-button{
-  background-color: rgb(0, 0, 0);
 }

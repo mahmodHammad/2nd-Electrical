@@ -6,9 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>electronics</title>
     <link rel="stylesheet" href="../src/css/style.css" />
-    <link rel="shortcut icon" href="">
+    <link rel="shortcut icon" href="" />
     <link rel="icon" href="../src/assets/icon.png" type="image/icon type" />
-  
   </head>
 
   <body>
@@ -30,53 +29,44 @@
       </ul>
     </nav>
 
-
-
     <div class="content">
       <h1 class="center">electronics Dr-wagdy part</h1>
       <div class="loading" id="loading">
-        <img 
-        src="../src/assets/Infinity.svg" 
-        alt="triangle with all three sides equal" />
+        <img
+          src="../src/assets/Infinity.svg"
+          alt="triangle with all three sides equal"
+        />
       </div>
     </div>
 
     <div class="up">
       <a href="#nav">
-        <img src="../src/assets/up.svg" alt="up">
+        <img src="../src/assets/up.svg" alt="up" />
       </a>
     </div>
-  
-    <div class="formula">
-      <button class="toggle">
-        toggle FormulaSheet<span>&#10084;</span>
-      </button>
-      <img id="fsheet" src="../src/assets/formulas2019.png"/>
-    </div>
 
-    <div class="quran" id="quran"> </div>
+    <div class="quran" id="quran"></div>
 
-
-    
     <footer class="footer">
-      <p>all credits goes to Cam-team & Drive-Team<span>&#10084;</span> © 2020</p>
+      <p>
+        all credits goes to Cam-team & Drive-Team<span>&#10084;</span> © 2020
+      </p>
     </footer>
-
   </body>
 
+  <script type="module">
+    const jsonUrl =
+      "https://my-json-server.typicode.com/mahmodHammad/makram/data";
+    import fun from "../src/js/loadcontent.js";
+    fun(jsonUrl);
+  </script>
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=UA-155223882-1"
+  ></script>
 
-
-<script type="module">
-  const jsonUrl="https://my-json-server.typicode.com/mahmodHammad/wagdy/data"
-  import fun from "../src/js/loadcontent.js"  
-  fun(jsonUrl)
-</script> 
-<script src="../src/js/toggleimage.js"></script>
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155223882-1" ></script>
-
-<script src="../src/js/quran.js"></script> 
-<script>
+  <script src="../src/js/quran.js"></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() {
       dataLayer.push(arguments);
@@ -84,6 +74,4 @@
     gtag("js", new Date());
     gtag("config", "UA-155223882-1");
   </script>
-
-
 </html>

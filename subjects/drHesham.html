@@ -66,15 +66,13 @@
   <script src="../src/js/toggleimage.js">
 
   </script>
+<!-- <script type="module" src="../src/js/loadcontent.js">
+</script>     -->
 <script type="module">
-import creater from "../src/js/index.js";
-const inst = new creater();
-const jsonUrl="https://my-json-server.typicode.com/mahmodhammad/electronics/data"
-fetch(jsonUrl).then((e)=>e.json()) .then(data=>{
-  document.getElementById("loading").style.display="none"
-  inst.renderbtn(data)
-})
-</script>    
+  import fun from "../src/js/loadcontent.js"
+  fun("https://my-json-server.typicode.com/mahmodhammad/electronics/data")
+</script>
+
 <script src="../src/js/quran.js"></script> 
 
 </script>
