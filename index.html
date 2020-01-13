@@ -16,7 +16,7 @@
   </head>
 
   <body>
-    <nav class="">
+    <nav class="" id="nav">
       <ul>
         <li><a href="#">home</a></li>
         <li>
@@ -58,23 +58,23 @@
         <div class="title">
           electronics
         </div>
-        <a class="left" href="./subjects/drHesham.html">dr Hesham</a>
-        <a class="right" href="./subjects/profWagdy.html">prof wagdy</a>
+        <a class="left sbtn" href="./subjects/drHesham.html">dr Hesham</a>
+        <a class="right sbtn" href="./subjects/profWagdy.html">prof wagdy</a>
       </div>
       <div class="subject">
         <div class="title">
           Math 3
         </div>
-        <a class="left" href="./subjects/drmakram.html">Dr Makram</a>
-        <a class="right" href="./subjects/Drmahmoud.html">Dr Mahmoud</a>
+        <a class="left sbtn" href="./subjects/drmakram.html">Dr Makram</a>
+        <a class="right sbtn" href="./subjects/Drmahmoud.html">Dr Mahmoud</a>
       </div>
 
       
       <div class="subject">
-        <a href="./subjects/drHesham.html">Logic Design</a>
+        <a href="./subjects/logic.html">Logic Design</a>
       </div>
       <div class="subject">
-        <a href="./subjects/drHesham.html">Mechanical Engineering</a>
+        <a href="#">Mechanical Engineering</a>
       </div>
     </div>
 
@@ -93,35 +93,48 @@
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=UA-155223882-1"
-  ></script>
+  
+<script type="module">
+import scroll from "./src/js/scroll.js"
 
+const content = document.getElementById('subjects')
+const nav = document.getElementById('nav')
+scroll(content,'d')
+scroll(nav,'f')
+
+</script>
+
+  <script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=UA-155223882-1"
+  ></script>
+  
   <script>
     window.dataLayer = window.dataLayer || [];
-
+    
     function gtag() {
       dataLayer.push(arguments);
     }
     gtag("js", new Date());
     gtag("config", "UA-155223882-1");
-  </script>
+    </script>
 
-  <script>
-    if ("serviceWorker" in navigator) {
-      window.addEventListener("load", () => {
+<script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
         navigator.serviceWorker.register("./sw.js");
       });
     }
-  </script>
+    </script>
 
-  <style>
-    .bounce {
-      -moz-animation: bounce 3s infinite;
-      -webkit-animation: bounce 3s infinite;
-      animation: bounce 3s infinite;
-    }
+
+
+<style>
+  .bounce {
+    -moz-animation: bounce 3s infinite;
+    -webkit-animation: bounce 3s infinite;
+    animation: bounce 3s infinite;
+  }
     @-moz-keyframes bounce {
       0%,
       20%,

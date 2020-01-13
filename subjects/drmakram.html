@@ -55,10 +55,19 @@
   </body>
 
   <script type="module">
-    const jsonUrl =
+
+      
+      
+      const jsonUrl =
       "https://my-json-server.typicode.com/mahmodHammad/makram/data";
-    import fun from "../src/js/loadcontent.js";
-    fun(jsonUrl);
+      import fun from "../src/js/loadcontent.js";
+      fun(jsonUrl);
+      
+      import scroll from "../src/js/scroll.js"
+      const nav = document.getElementById('nav')
+      document.getElementById('quran')
+      scroll(quran,'d')
+      scroll(nav,'f')
   </script>
   <script
     async
