@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- <link rel="manifest" href="./manifest.json" /> -->
     <meta name="mobile-web-app-capable" content="yes" />
-    <!-- <meta name="apple-mobile-web-app-capable" content="yes"> -->
-    <!-- <meta name="msapplication-starturl" content="/"> -->
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -52,7 +48,9 @@
 
     <div class="subjects" id="subjects">
       <div class="subject">
-        <a href="./subjects/field.html">Electro Magnetic Fields</a>
+        <a class="title" href="./subjects/field.html"
+          >Electro Magnetic Fields</a
+        >
       </div>
       <div class="subject">
         <div class="title">
@@ -69,12 +67,11 @@
         <a class="right sbtn" href="./subjects/Drmahmoud.html">Dr Mahmoud</a>
       </div>
 
-      
       <div class="subject">
-        <a href="./subjects/logic.html">Logic Design</a>
+        <a class="title" href="./subjects/logic.html">Logic Design</a>
       </div>
       <div class="subject">
-        <a href="#">Mechanical Engineering</a>
+        <a class="title" href="#">Mechanical Engineering</a>
       </div>
     </div>
 
@@ -93,48 +90,44 @@
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
-  
-<script type="module">
-import scroll from "./src/js/scroll.js"
+  <script type="module">
+    import scroll from "./src/js/scroll.js";
 
-const content = document.getElementById('subjects')
-const nav = document.getElementById('nav')
-scroll(content,'d')
-scroll(nav,'f')
-
-</script>
+    const content = document.getElementById("subjects");
+    const nav = document.getElementById("nav");
+    scroll(content, "d");
+    scroll(nav, "f");
+  </script>
 
   <script
-  async
-  src="https://www.googletagmanager.com/gtag/js?id=UA-155223882-1"
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=UA-155223882-1"
   ></script>
-  
+
   <script>
     window.dataLayer = window.dataLayer || [];
-    
+
     function gtag() {
       dataLayer.push(arguments);
     }
     gtag("js", new Date());
     gtag("config", "UA-155223882-1");
-    </script>
+  </script>
 
-<script>
-  if ("serviceWorker" in navigator) {
-    window.addEventListener("load", () => {
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
         navigator.serviceWorker.register("./sw.js");
       });
     }
-    </script>
+  </script>
 
-
-
-<style>
-  .bounce {
-    -moz-animation: bounce 3s infinite;
-    -webkit-animation: bounce 3s infinite;
-    animation: bounce 3s infinite;
-  }
+  <style>
+    .bounce {
+      -moz-animation: bounce 3s infinite;
+      -webkit-animation: bounce 3s infinite;
+      animation: bounce 3s infinite;
+    }
     @-moz-keyframes bounce {
       0%,
       20%,
@@ -145,8 +138,8 @@ scroll(nav,'f')
         transform: translateY(0);
       }
       40% {
-        -moz-transform: translateY(-3vh);
-        transform: translateY(-3vh);
+        -moz-transform: translateY(-2vh);
+        transform: translateY(-2vh);
       }
       60% {
         -moz-transform: translateY(-1.5vh);
@@ -163,8 +156,8 @@ scroll(nav,'f')
         transform: translateY(0);
       }
       40% {
-        -webkit-transform: translateY(-3vh);
-        transform: translateY(-3vh);
+        -webkit-transform: translateY(-2vh);
+        transform: translateY(-2vh);
       }
       60% {
         -webkit-transform: translateY(-1.5vh);
@@ -183,10 +176,10 @@ scroll(nav,'f')
         transform: translateY(0);
       }
       40% {
-        -moz-transform: translateY(-3vh);
-        -ms-transform: translateY(-3vh);
-        -webkit-transform: translateY(-3vh);
-        transform: translateY(-3vh);
+        -moz-transform: translateY(-2vh);
+        -ms-transform: translateY(-2vh);
+        -webkit-transform: translateY(-2vh);
+        transform: translateY(-2vh);
       }
       60% {
         -moz-transform: translateY(-1.5vh);
