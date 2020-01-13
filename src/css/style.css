@@ -18,7 +18,7 @@ body {
 
 nav {
   background-color: #066286;
-  padding: 4px 0px;
+  padding: 3px 0px;
   margin: 0px;
   width: 100%;
 }
@@ -42,13 +42,13 @@ nav ul li a {
   display: inline-block;
 
   background-color: rgba(222, 200, 200, 0.05);
-  padding: 0.5vh 5vw;
+  padding: 0.4vh 5vw;
   border-radius: 4px;
   margin: 0 1.5vw;
   color: rgb(233, 238, 247);
   text-decoration: none;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 12px;
   text-transform: capitalize;
   font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
@@ -66,7 +66,7 @@ nav ul li a:hover {
 /* header*************************************/
 
 .header {
-  height: 96.5vh !important;
+  height: 97vh !important;
   /* margin-top: 40px; */
   background: linear-gradient(
     0deg,
@@ -242,11 +242,11 @@ nav ul li a:hover {
 .btn {
   text-transform: capitalize;
   color: #055482;
-  margin: 12px 1%;
+  margin: 10px 1%;
   border: none;
-  padding: 7px 20px;
+  padding: 6px 15px;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: bold;
   background-color: #d3e3e9 !important;
 }
