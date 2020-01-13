@@ -104,21 +104,12 @@ export default class createIframe {
       const srcID = recsrc.split("/")[5];
       const  displayrec = `https://drive.google.com/file/d/${srcID}/preview`;
       let rec = document.createElement("iframe");
+      rec.setAttribute("frameborder", "0");
+      
       rec.src = displayrec;
       rec.className = "record";
       scope.appendChild(rec);
     }
-        //  
-      
-    //   <iframe
-    //   class="player"
-    //   src="https://qurancentral.com/?powerpress_embed=126406-podcast&amp;powerpress_player=mediaelement-audio"
-    //   frameborder="0"
-    //   scrolling="no"
-    // ></iframe>
-    
-
-
 
   renderpdf(pdfsrc, scope) {
     let scroll = document.createElement("a");
@@ -140,6 +131,7 @@ export default class createIframe {
     scope.appendChild(download);
 
     let pdf = document.createElement("iframe");
+    pdf.setAttribute("frameborder", "0");
     pdf.src = displayPdf;
     pdf.className = "pdf";
     pdf.id = "doc";
