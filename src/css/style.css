@@ -28,7 +28,7 @@ body {
 nav {
   transition: all 0.3s ease;
 
-  background-color: #1a83ad;
+  background-color: #039cc7;
   padding: 3px 0px;
   margin: 0px;
   width: 100%;
@@ -82,18 +82,18 @@ nav ul li a:hover {
   /* margin-top: 40px; */
   background: linear-gradient(
     0deg,
-    #02b3e4,
+    #039cc7,
     rgb(230, 246, 255),
     rgb(230, 246, 255),
-    #02b3e4
+    #039cc7ec
   );
-  background: linear-gradient(
+  /* background: linear-gradient(
     0deg,
     #1a84adfb,
     rgb(230, 246, 255),
     rgb(230, 246, 255),
     #1a84adfb
-  );
+  ); */
 
   /* padding: 41vh 0px 41vh 0px; */
   width: 100%;
@@ -185,13 +185,16 @@ border-radius: 0.375rem; */
   box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15);
   font-size: 14px;
   color: #045677 !important;
-  padding: 3px 18px;
+  padding: 4px 18px;
   position: relative;
   border-radius: 0.25rem;
   top: 3px;
   transition: all 0.3s ease;
-  background-color: #078cc0;
+  
+  background-color:#02b3e4 ;
   color: #fff !important;
+  /* #029fcb */
+  /* old background color   078cc0 */
 }
 
 .sbtn {
@@ -200,7 +203,7 @@ border-radius: 0.375rem; */
 .sbtn:hover {
   box-shadow: 2px 4px 8px 0px rgba(46, 61, 73, 0.2);
 
-  background-color: #03678f;
+  background-color: #09a0ca;
   color: red !important;
 }
 
@@ -256,7 +259,7 @@ border-radius: 0.375rem; */
   border: 0.7px solid #045c7f32;
   background-color: #e6f5fd78;
   font-size: 0.6rem;
-  font-family:  sans-serif,Tahoma, Verdana;
+  font-family: sans-serif, Tahoma, Verdana;
   border-radius: 3px;
   transition: all 0.3s ease;
 }
@@ -273,7 +276,7 @@ border-radius: 0.375rem; */
 .nestedBtns {
   padding: 25px 0;
   text-align: center;
-  background: linear-gradient(180deg, #1a83adf6, rgb(255, 255, 255));
+  background: linear-gradient(180deg, #039cc7f5, rgb(255, 255, 255));
 }
 
 .nestedBtns button {
@@ -284,7 +287,7 @@ border-radius: 0.375rem; */
 
 .btns {
   text-align: center;
-  background-color: #1a84adfb;
+  background-color: #039cc7;
 }
 
 .btn {
@@ -293,7 +296,7 @@ border-radius: 0.375rem; */
   color: #055482;
   margin: 10px 1%;
   border: none;
-  padding: 6px 15px;
+  padding: 4px 15px;
   border-radius: 3px;
   font-size: 13px;
   font-weight: bold;
@@ -451,7 +454,7 @@ border-radius: 0.375rem; */
   }
 
   .Download,
-  .scroll{
+  .scroll {
     font-size: 0.37rem;
   }
 }
@@ -506,7 +509,7 @@ footer span {
 /* ********************************************* */
 
 a {
-  color: #0b77a1;
+  color: #0386b9;
   text-decoration: none;
   background-color: transparent;
 }
