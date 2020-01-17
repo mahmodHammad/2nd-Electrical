@@ -161,7 +161,7 @@ border-radius: 0.375rem; */
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 a.title{
-  color: rgb(0, 84, 117)  !important;
+  color: rgb(6, 58, 78)  !important;
 }
 
 .subject a:hover {
@@ -509,30 +509,34 @@ a.title{
   transform: translatex(-100vw);
 }
 .btnholder{
-  padding: 4px 6px;
+  padding: 4px 7px;
   text-align: center;
   background-color: #ffffff;
   position: relative;
-  top: -99.2vh !important;
+  top: -99.4vh !important;
   left: -29px;
   z-index: 10;
   display: inline-block;
+  border-radius: 3px;
 }
 
 .switch {
   border-radius: 50%;
   margin: 0;
-  /* border: 1px solid green; */
   background: url('../assets/switch.svg');
+  opacity: 0.5;
   padding: 14px;
 }
 .switch:active , .switch:hover ,.switch{
   outline: none;
 }
+.switch:hover{
+  cursor: pointer;
+}
 
 .switchBtnClicked {
   color: #fff !important;
-  background-color: rgb(242, 254, 255) !important;
+  background-color: rgb(224, 224, 224) !important;
 }
 
 
