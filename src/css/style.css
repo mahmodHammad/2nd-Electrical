@@ -79,7 +79,7 @@ nav ul li a:hover {
 /* header*************************************/
 
 .header {
-  height: 97vh !important;
+  height: 98vh !important;
   /* margin-top: 40px; */
   background: linear-gradient(
     0deg,
@@ -159,6 +159,9 @@ border-radius: 0.375rem; */
   color: rgb(10, 59, 78) !important;
   font-weight: 600;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+a.title{
+  color: rgb(0, 84, 117)  !important;
 }
 
 .subject a:hover {
