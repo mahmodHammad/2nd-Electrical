@@ -5,5 +5,6 @@ export default function(jsonUrl){
     fetch(jsonUrl).then((e)=>e.json()) .then(data=>{
       document.getElementById("loading").style.display="none"
       inst.renderbtn(data)
+      console.log(data)
     })
 }

@@ -10,7 +10,7 @@ export default class createIframe {
   }
 
   // take array of data then display each index of array as button once clicked display content
-  renderbtn(givenData, container = this.content, isNested = false) {
+  renderbtn(givenData=this.data, container = this.content, isNested = false) {
     let btns = document.createElement("div");
     btns.className = "btns";
     container.appendChild(btns);
