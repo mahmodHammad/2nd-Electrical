@@ -1,3 +1,5 @@
+import scroller from './scroll.js'
+
 export default class createIframe {
   constructor(data) {
     this.content = document.querySelector(".content");
@@ -76,12 +78,6 @@ export default class createIframe {
   }
 
   putContent(label, data, scope) {
-    // console.log("hello data : "  ,data )
-    // console.log("hello data : "  ,label )
-
-    // const contentHolder = document.createElement("div")
-    // contentHolder.className="contentHolder"
-    // this.content.appendChild(contentHolder)
     this.createIframe(label, data.rec, data.pdf, data.video, scope);
   }
 
@@ -139,6 +135,7 @@ export default class createIframe {
     pdf.src = displayPdf;
     pdf.className = "pdf";
     pdf.id = "doc";
+    scroller(pdf , 'j')
     scope.appendChild(pdf);
     return pdf;
   }
@@ -182,13 +179,13 @@ export default class createIframe {
 
   // check if it's rendered before
   render(child) {
+    
     this.renderOnce("c", this.content, "old", child);
     this.footer.style.display = "block";
   }
 
   // a shit of code  just to make sure there is just one child for parent
   renderOnce(counter, container, old, child) {
-  
     if (this[counter] === 0) {
       container.appendChild(child);
       this[old] = child;
