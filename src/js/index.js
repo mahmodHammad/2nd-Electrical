@@ -62,7 +62,7 @@ export default class createIframe {
 
   // take button content then display button  , adding click event to createiframe function
   createbtn(title, classe, label, value, container, nested) {
-    console.log(container)
+    console.log(container);
     let btn = document.createElement("button");
     btn.className = classe;
     btn.innerText = title;
@@ -76,14 +76,13 @@ export default class createIframe {
   }
 
   putContent(label, data, scope) {
-    console.log("hello data : "  ,data )
-    console.log("hello data : "  ,label )
-    console.log("hello data : "  ,scope )
-    const contentHolder = document.createElement("div")
-    contentHolder.innerText="hello from content"
-    contentHolder.className="contentHolder"
-    this.content.document.appendChild(contentHolder)
-    // this.createIframe(label, value.rec, value.pdf, value.video, container);
+    // console.log("hello data : "  ,data )
+    // console.log("hello data : "  ,label )
+
+    // const contentHolder = document.createElement("div")
+    // contentHolder.className="contentHolder"
+    // this.content.appendChild(contentHolder)
+    this.createIframe(label, data.rec, data.pdf, data.video, scope);
   }
 
   // take src ,container then create an ifreame
@@ -117,7 +116,6 @@ export default class createIframe {
   }
 
   renderpdf(pdfsrc, scope) {
-    console.log(pdfsrc);
     let scroll = document.createElement("a");
     scroll.className = "scroll";
     scroll.href = "#doc";
@@ -142,6 +140,7 @@ export default class createIframe {
     pdf.className = "pdf";
     pdf.id = "doc";
     scope.appendChild(pdf);
+    return pdf;
   }
 
   rendervideo(video, scope) {
@@ -189,6 +188,11 @@ export default class createIframe {
 
   // a shit of code  just to make sure there is just one child for parent
   renderOnce(counter, container, old, child) {
+    console.log(counter)
+    console.log(container)
+    console.log(old)
+    console.log(child)
+
     if (this[counter] === 0) {
       container.appendChild(child);
       this[old] = child;

@@ -9,7 +9,7 @@ export default function(jsonUrl) {
     .then(e => e.json())
     .then(data => {
       document.getElementById("loading").style.display = "none";
-      // inst.renderbtn(data);
+      inst.renderbtn(data);
       // inst.putContent(1,2,4)
     })
 }
