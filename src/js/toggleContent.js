@@ -54,7 +54,7 @@ export default class Toggle extends renderer {
   renderbutton() {
     const btn = document.createElement("button");
     btn.className = "btn switch";
-    btn.innerText = "<-->";
+    btn.innerText = "<->";
     btn.onclick = this.handleClick;
     
     this.SwitchButton = btn 
