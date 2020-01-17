@@ -1,6 +1,7 @@
 import creater from "./toggleContent.js";
-const inst = new creater();
-const container  = document.getElementById('toggle')
+const container = document.querySelector('.content')
+// console.log(container)
+const inst = new creater(container);
 
 export default function(jsonUrl) {
   // const jsonUrl="https://my-json-server.typicode.com/mahmodhammad/electronics/data"
@@ -8,10 +9,7 @@ export default function(jsonUrl) {
     .then(e => e.json())
     .then(data => {
       document.getElementById("loading").style.display = "none";
-        console.log(data)
-      inst.renderbtn(data);
-    //   inst.renderpdf('https://drive.google.com/file/d/1Sc7Od43zI_syMa7o7X47-1AiJgTPhXjF/view',container)
-      inst.loadcontent(data);
+      // inst.renderbtn(data);
+      // inst.putContent(1,2,4)
     })
-    .then(() => inst.renderToggle());
 }

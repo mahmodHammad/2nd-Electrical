@@ -10,7 +10,7 @@ export default class createIframe {
   }
 
   // take array of data then display each index of array as button once clicked display content
-  renderbtn(givenData=this.data, container = this.content, isNested = false) {
+  renderbtn(givenData = this.data, container = this.content, isNested = false) {
     let btns = document.createElement("div");
     btns.className = "btns";
     container.appendChild(btns);
@@ -62,22 +62,28 @@ export default class createIframe {
 
   // take button content then display button  , adding click event to createiframe function
   createbtn(title, classe, label, value, container, nested) {
+    console.log(container)
     let btn = document.createElement("button");
     btn.className = classe;
     btn.innerText = title;
     btn.onclick = () => {
       nested
         ? this.renderbtn(value, this.content, true)
-        : this.createIframe(
-            label,
-            value.rec,
-            value.pdf,
-            value.video,
-            container
-          );
+        : this.putContent(label, value, container);
     };
 
     return btn;
+  }
+
+  putContent(label, data, scope) {
+    console.log("hello data : "  ,data )
+    console.log("hello data : "  ,label )
+    console.log("hello data : "  ,scope )
+    const contentHolder = document.createElement("div")
+    contentHolder.innerText="hello from content"
+    contentHolder.className="contentHolder"
+    this.content.document.appendChild(contentHolder)
+    // this.createIframe(label, value.rec, value.pdf, value.video, container);
   }
 
   // take src ,container then create an ifreame
@@ -100,19 +106,18 @@ export default class createIframe {
   }
 
   renderRecord(recsrc, scope) {
-  
-      const srcID = recsrc.split("/")[5];
-      const  displayrec = `https://drive.google.com/file/d/${srcID}/preview`;
-      let rec = document.createElement("iframe");
-      rec.setAttribute("frameborder", "0");
-      
-      rec.src = displayrec;
-      rec.className = "record";
-      scope.appendChild(rec);
-    }
+    const srcID = recsrc.split("/")[5];
+    const displayrec = `https://drive.google.com/file/d/${srcID}/preview`;
+    let rec = document.createElement("iframe");
+    rec.setAttribute("frameborder", "0");
+
+    rec.src = displayrec;
+    rec.className = "record";
+    scope.appendChild(rec);
+  }
 
   renderpdf(pdfsrc, scope) {
-    console.log(pdfsrc)
+    console.log(pdfsrc);
     let scroll = document.createElement("a");
     scroll.className = "scroll";
     scroll.href = "#doc";
@@ -145,8 +150,8 @@ export default class createIframe {
     //change this later XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
     let videoSrc = "";
-    const isNotPlayList = video.rec.includes("watch")
-    
+    const isNotPlayList = video.rec.includes("watch");
+
     if (!isNotPlayList)
       videoSrc = `https://www.youtube.com/embed/videoseries?list=${videoID}`;
     else videoSrc = `https://www.youtube.com/embed/${videoID}`;
