@@ -7,8 +7,8 @@ export default class Toggle extends renderer {
     this.clicked = 0;
 
     // NEVER MIND ABOUT TOGGLE , TOGGLEOLD FOR NOW !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    this.toggle=0
-    this.toggleOld= 0
+    this.toggle = 0;
+    this.toggleOld = 0;
   }
 
   putContent(label, data) {
@@ -21,48 +21,48 @@ export default class Toggle extends renderer {
     }
   }
   renderSwitch(url1, url2) {
-    // const scope = this.content;
+    // the parent of content
     const contentHolder = document.createElement("div");
-    contentHolder.className = "contentHolder";
+    contentHolder.className = "contentHolder rev";
+    // ****************************************************
 
+    // WILL Cnverted to a separate function later XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+    // content 1
     const content1 = document.createElement("div");
-
     this.renderpdf(url1, content1);
-
-    // url1 content here *********************
-
     content1.className = "subContent content1";
     content1.id = "content1";
+    contentHolder.appendChild(content1);
+    // ****************************************************
 
+    // content 2
     const content2 = document.createElement("div");
-
     this.renderpdf(url2, content2);
-    this.render(content1, this.content);
-
-    // url2 content here *********************
-
     content2.className = "subContent content2";
     content2.id = "content2";
-
-    contentHolder.appendChild(content1);
     contentHolder.appendChild(content2);
-    // scope.appendChild(contentHolder);
+    // ****************************************************
+
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
     const btn = this.renderbutton();
     contentHolder.appendChild(btn);
 
-    // this.render(contentHolder, this.content);
-    console.log("content" ,this.content)
-    this.renderOnce('toggle',this.content ,'toggleOld',contentHolder)
+    this.renderOnce("toggle", this.content, "toggleOld", contentHolder);
   }
   renderbutton() {
     const btn = document.createElement("button");
     btn.className = "btn switch";
-    btn.innerText = "switch";
+    btn.innerText = "<-->";
     btn.onclick = this.handleClick;
+    
+    this.SwitchButton = btn 
     return btn;
   }
   handleClick = () => {
     content1.classList.toggle("leftcontent");
     content2.classList.toggle("leftcontent");
+    this.SwitchButton.classList.toggle("switchBtnClicked")
   };
 }

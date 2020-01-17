@@ -1,4 +1,4 @@
-*{
+* {
   /* border: 0.7px solid green; */
 }
 button {
@@ -295,6 +295,7 @@ border-radius: 0.375rem; */
 }
 
 .btn {
+  transition: all 0.3s ease;
   box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15);
   text-transform: capitalize;
   color: #055482;
@@ -610,29 +611,34 @@ p {
   width: 100vw;
   display: inline-block;
   position: relative;
-  z-index: 10000000;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
 }
 .content1 {
 }
 .content2 {
-  background-color: rgba(124, 50, 0, 0.054);
-  z-index: 10000000;
+  background-color: rgba(0, 217, 255, 0.024);
 }
-
 .leftcontent {
   transform: translatex(-100vw);
 }
 .switch {
+  width: 15px;
+  text-align: center;
+  height: 15px;
+  opacity: 0.8;
+  color: #0386b9;
   position: relative;
-  font-size: 8px;
+  font-size: 6px;
+  font-weight: bold;
+  padding: 2px;
   top: 0px;
   top: -100vh !important;
-  left: -48vw;
-  width: 8vw;
-  z-index: 10000000;
+  left: -25px;
+  z-index: 10;
+  border-radius: 50%;
 }
 
-#loading {
-  display: none;
+.switchBtnClicked {
+  color: #fff !important;
+  background-color: #333 !important;
 }

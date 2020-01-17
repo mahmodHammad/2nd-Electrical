@@ -188,11 +188,7 @@ export default class createIframe {
 
   // a shit of code  just to make sure there is just one child for parent
   renderOnce(counter, container, old, child) {
-    console.log(counter)
-    console.log(container)
-    console.log(old)
-    console.log(child)
-
+  
     if (this[counter] === 0) {
       container.appendChild(child);
       this[old] = child;
