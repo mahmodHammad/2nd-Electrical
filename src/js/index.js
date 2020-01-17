@@ -112,6 +112,7 @@ export default class createIframe {
     }
 
   renderpdf(pdfsrc, scope) {
+    console.log(pdfsrc)
     let scroll = document.createElement("a");
     scroll.className = "scroll";
     scroll.href = "#doc";
