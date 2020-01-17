@@ -1,5 +1,5 @@
-import scroller from './scroll.js'
-
+import scroller from "./scroll.js";
+import position from './findPosition.js'
 export default class createIframe {
   constructor(data) {
     this.content = document.querySelector(".content");
@@ -64,7 +64,6 @@ export default class createIframe {
 
   // take button content then display button  , adding click event to createiframe function
   createbtn(title, classe, label, value, container, nested) {
-    console.log(container);
     let btn = document.createElement("button");
     btn.className = classe;
     btn.innerText = title;
@@ -111,32 +110,40 @@ export default class createIframe {
     scope.appendChild(rec);
   }
 
-  renderpdf(pdfsrc, scope) {
+  extraButtons(pdfPosition,downloadPdf) {
     let scroll = document.createElement("a");
     scroll.className = "scroll";
-    scroll.href = "#doc";
     scroll.innerHTML = "scroll to pdf";
-
-    const src = pdfsrc.split("/")[5];
-
-    const displayPdf = `https://drive.google.com/file/d/${src}/preview`;
-    const downloadPdf = `https://drive.google.com/uc?authuser=0&id=${src}&export=download`;
+    scroll.href='#doc'
 
     let download = document.createElement("a");
     download.className = "Download";
     download.href = downloadPdf;
     download.innerHTML = "Download pdf";
 
-    scope.appendChild(scroll);
-    scope.appendChild(download);
+    return { scroll, download };
+  }
+
+  renderpdf(pdfsrc, scope) {
+    const src = pdfsrc.split("/")[5];
+    const displayPdf = `https://drive.google.com/file/d/${src}/preview`;
+    const downloadPdf = `https://drive.google.com/uc?authuser=0&id=${src}&export=download`;
 
     let pdf = document.createElement("iframe");
     pdf.setAttribute("frameborder", "0");
     pdf.src = displayPdf;
     pdf.className = "pdf";
     pdf.id = "doc";
-    scroller(pdf , 'j')
+
+    const pdfPosition = position(pdf)
+    const extraBtn = this.extraButtons( pdfPosition.top,downloadPdf);
+    
+    scope.appendChild(extraBtn.scroll);
+    scope.appendChild(extraBtn.download);
     scope.appendChild(pdf);
+    
+    scroller(pdf, "j");
+    
     return pdf;
   }
 
@@ -179,7 +186,6 @@ export default class createIframe {
 
   // check if it's rendered before
   render(child) {
-    
     this.renderOnce("c", this.content, "old", child);
     this.footer.style.display = "block";
   }
