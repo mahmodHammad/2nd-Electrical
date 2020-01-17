@@ -47,17 +47,23 @@ export default class Toggle extends renderer {
 // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
     const btn = this.renderbutton();
-    contentHolder.appendChild(btn);
+    const btnholder = document.createElement('span')
+    btnholder.className='btnholder'
+    btnholder.appendChild(btn)
+    console.log("a",btnholder)
+    this.SwitchButton = btnholder
+    console.log("b",this.SwitchButton)
+
+    contentHolder.appendChild(btnholder);
 
     this.renderOnce("toggle", this.content, "toggleOld", contentHolder);
   }
   renderbutton() {
+
     const btn = document.createElement("button");
-    btn.className = "btn switch";
-    btn.innerText = "<->";
+    btn.className = "switch";
     btn.onclick = this.handleClick;
     
-    this.SwitchButton = btn 
     return btn;
   }
   handleClick = () => {

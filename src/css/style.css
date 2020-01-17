@@ -508,27 +508,31 @@ a.title{
 .leftcontent {
   transform: translatex(-100vw);
 }
-.switch {
-  width: 20px;
+.btnholder{
+  padding: 4px 6px;
   text-align: center;
-  height: 20px;
-  opacity: 0.7;
-  color: #0386b9;
+  background-color: #ffffff;
   position: relative;
-  font-size: 8px;
-  font-weight: 900;
-
-  padding: 2px;
-  top: 0px;
-  top: -100vh !important;
-  left: -25px;
+  top: -99.2vh !important;
+  left: -29px;
   z-index: 10;
+  display: inline-block;
+}
+
+.switch {
   border-radius: 50%;
+  margin: 0;
+  /* border: 1px solid green; */
+  background: url('../assets/switch.svg');
+  padding: 14px;
+}
+.switch:active , .switch:hover ,.switch{
+  outline: none;
 }
 
 .switchBtnClicked {
   color: #fff !important;
-  background-color: #333 !important;
+  background-color: rgb(242, 254, 255) !important;
 }
 
 
