@@ -77,11 +77,11 @@ export default class createIframe {
   }
 
   putContent(label, data, scope) {
-    this.createIframe(label, data.rec, data.pdf, data.video, scope);
+    this.createIframe(label, data.rec, data.pdf, data.video, scope , data.model);
   }
 
   // take src ,container then create an ifreame
-  createIframe(label, recsrc, pdfsrc, video, container) {
+  createIframe(label, recsrc, pdfsrc, video, container ,model) {
     let scope = document.createElement("div");
     scope.className = "rev";
     let hd3 = document.createElement("h3");
@@ -94,9 +94,27 @@ export default class createIframe {
 
     if (video) this.rendervideo(video, scope);
 
+    if (model) this.renderModel ( model , scope)
+
     this.render(scope, container);
 
     return scope;
+  }
+
+  renderModel(url , scope){
+    const displayrec = url;
+    let rec = document.createElement("iframe");
+    rec.setAttribute("frameborder", "0");
+    rec.src=url
+
+    rec.src = displayrec;
+    rec.className = "record";
+
+    const cont = document.createElement('div')
+    cont.className ="sketchfab-embed-wrapper"
+    cont.appendChild(rec)
+
+    scope.appendChild(cont);
   }
 
   renderRecord(recsrc, scope) {

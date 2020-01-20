@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mecha</title>
+    <link rel="stylesheet" href="../src/css/style.css" />
+    <link rel="shortcut icon" href="" />
+    <link rel="icon" href="../src/assets/icon.png" type="image/icon type" />
+  </head>
+
+  <body>
+    <nav id="nav">
+      <ul>
+        <li><a href="../index.html">home</a></li>
+        <li>
+          <a
+            href="https://drive.google.com/drive/folders/1DQNrFndwdH1_D_026miRfwM7nA1duKVF"
+            >drive</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.youtube.com/channel/UCDD_drN23ChmeJ2dhQqnehg/playlists"
+            >channel</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <h1 class="center">Mechanical engineering</h1>
+      <div class="loading" id="loading">
+        <img
+          src="../src/assets/Infinity.svg"
+          alt="triangle with all three sides equal"
+        />
+      </div>
+    </div>
+
+    <div class="up">
+      <a href="#nav">
+        <img src="../src/assets/up.svg" alt="up" />
+      </a>
+    </div>
+
+    <div id="toggle"></div>
+
+    <div class="quran" id="quran"></div>
+
+    <footer class="footer">
+      <p>
+        all credits goes to Cam-team & Drive-Team<span>&#10084;</span> © 2020
+      </p>
+    </footer>
+  </body>
+
+  <script type="module">
+    const jsonUrl =
+      "https://my-json-server.typicode.com/mahmodHammad/logic/data";
+    import fun from "../src/js/temp.js";
+
+    import scroll from "../src/js/scroll.js";
+    const nav = document.getElementById("nav");
+    document.getElementById("quran");
+    scroll(quran, "d");
+    scroll(nav, "f");
+
+    fun(jsonUrl);
+  </script>
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=UA-155223882-1"
+  ></script>
+
+  <script src="../src/js/quran.js"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "UA-155223882-1");
+  </script>
+</html>

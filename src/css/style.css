@@ -12,8 +12,9 @@ html {
 body {
   margin: 0;
   width: 100%;
-
+overflow-x: hidden;
   text-transform: capitalize;
+  /* overflow: hidden; */
 }
 
 .center {
@@ -180,12 +181,12 @@ a.title{
   margin: 10px 6vw 0 0;
 }
 
+
 .subjects .right {
   /* display: block; */
   margin: 20px 0 0 6vw;
 }
-.subjects .right,
-.subjects .left {
+.sbtn{
   box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15);
   font-size: 14px;
   color: #045677 !important;
@@ -194,16 +195,15 @@ a.title{
   border-radius: 0.25rem;
   top: 3px;
   transition: all 0.3s ease;
-
   background-color: #02b3e4;
-  color: #fff !important;
-  /* #029fcb */
-  /* old background color   078cc0 */
-}
-
-.sbtn {
   font-size: 0.7rem !important;
 }
+.subjects .right,
+.subjects .left ,
+.subjects .center{
+  color: #fff !important;
+}
+
 .sbtn:hover {
   box-shadow: 2px 4px 8px 0px rgba(46, 61, 73, 0.2);
 
@@ -237,7 +237,7 @@ a.title{
 
 .rev {
   overflow: hidden;
-  width: 99%;
+  width: 100%;
   margin: 20px 0px;
   text-align: center;
 }
@@ -386,7 +386,8 @@ a.title{
 
 @media (max-width: 450px) {
   .subjects .right,
-  .subjects .left {
+  .subjects .left,
+  .subjects .center {
     font-size: 9px !important;
   }
   .subjects .title {
@@ -451,7 +452,8 @@ a.title{
   }
 
   .subjects .right,
-  .subjects .left {
+  .subjects .left ,
+  .subjects .center {
     font-size: 0.45rem !important;
   }
 
@@ -481,9 +483,12 @@ a.title{
   border-radius: 4px;
 }
 
+.sketchfab-embed-wrapper {
+  
+}
 .sketchfab-embed-wrapper iframe {
-  width: 100%;
-  height: 94vh;
+  width: 100% !important;
+  height: 94vh !important;
   margin-top: 0;
 }
 
