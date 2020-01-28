@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Drive API Quickstart</title>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="#">
+  </head>
+  <body>
+    <p>Drive API</p>
+
+    <!--Add buttons to initiate auth sequence and sign out-->
+    <button id="authorize_button" style="display: none;">Authorize</button>
+    <button id="signout_button" style="display: none;">Sign Out</button>
+    <pre id="content" style="white-space: pre-wrap;"></pre>
+
+    <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
+
+    <script  src="drive.js"></script>
+    <script src="./listfiles.js"></script>
+
+    <script
+      async
+      defer
+      src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};handleClientLoad()"
+      onreadystatechange="if (this.readyState === 'complete') this.onload()"
+    ></script>
+  </body>
+</html>
+
+<!-- about: {get: ƒ}
+kB: {servicePath: "drive/v3/", parameters: {…}, apiId: "drive:v3"}
+changes: {getStartPageToken: ƒ, list: ƒ, watch: ƒ}
+channels: {stop: ƒ}
+comments: {create: ƒ, delete: ƒ, get: ƒ, list: ƒ, update: ƒ}
+drives: {create: ƒ, delete: ƒ, get: ƒ, hide: ƒ, list: ƒ, …}
+files: {copy: ƒ, create: ƒ, delete: ƒ, emptyTrash: ƒ, export: ƒ, …}
+permissions: {create: ƒ, delete: ƒ, get: ƒ, list: ƒ, update: ƒ}
+replies: {create: ƒ, delete: ƒ, get: ƒ, list: ƒ, update: ƒ}
+revisions: {delete: ƒ, get: ƒ, list: ƒ, update: ƒ}
+teamdrives: {create: ƒ, delete: ƒ, get: ƒ, list: ƒ, update: ƒ} -->
