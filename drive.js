@@ -6,7 +6,7 @@ var API_KEY         = "AIzaSyBaYqW1LaG3Oua5aT40u6AqmaasNVPkwe0";
 var DISCOVERY_DOCS  = ["https://www.googleapis.com/discovery/v1/apis/drive/v3/rest"];
 var SCOPES          = "https://www.googleapis.com/auth/drive.metadata.readonly";
 var authorizeButton = document.getElementById("authorize_button");
-var signoutButton   = document.getElementById("signout_button");
+var signoutButton = document.getElementById("signout_button");
 
 //******************** END OF GLOBAL VARIABLES ********************/
 
